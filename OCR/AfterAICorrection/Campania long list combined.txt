@@ -1,0 +1,1299 @@
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Cattedrale
+Alternate Name: Cathedral
+harvard_long_list_stars: 1
+harvard_long_list_text: Dedicated to San Gennaro, patron saint of Naples. In the Chapel di San Gennaro, is 
+also the Tesoro of the Cathedral are the relics his blood.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di Sant' Angelo a Illo
+Alternate Name: Church of St. Angelus on the Nile
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa dell' Annunziata
+Alternate Name: Church of the Annunciation
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa dell' Ascensione
+Alternate Name: Church of the Ascension
+harvard_long_list_stars: 0 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di Santa Chiara
+Alternate Name: Church of Santa Clara
+harvard_long_list_stars: 0
+harvard_long_list_text: Noteworthy XIV century tombs.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di San Domenico Maggiore
+Alternate Name: Church of St. Domenio Major
+harvard_long_list_stars: 0
+harvard_long_list_text: Noteworthy tombs.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di San Filippo Neri
+Alternate Name: Church of St. Philip Neri
+harvard_long_list_stars: 0 
+harvard_long_list_text: Baroque paintings.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di San Gennaro
+Alternate Name: Church of St. Januarlus
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa del Gesu Nuovo (Trinita Maggiore)
+Alternate Name: Church of Jesus or Trinity Major
+harvard_long_list_stars: 0
+harvard_long_list_text: Good frescoes.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di San Giorgio Maggiore
+Alternate Name: Church of St. George Major
+harvard_long_list_stars: 0
+harvard_long_list_text: Original structure of the IV century.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di San Giovanni a Carbonara
+Alternate Name: Church of St. John
+harvard_long_list_stars: 0
+harvard_long_list_text: Important tombs.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di San Giovanni Maggiore
+Alternate Name: Church of St. John Major
+harvard_long_list_stars: 0
+harvard_long_list_text: Rests on ruins of temple of Hercules.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa dell' Incoronata
+Alternate Name: Church of the Virgin Encrowed
+harvard_long_list_stars: 0
+harvard_long_list_text: Medieval frescoes.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di San Lorenzo Maggiore
+Alternate Name: Church of St. Lawrence Major
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di Santa Maria del Carmine
+Alternate Name: Carmelite Church of St. Mary
+harvard_long_list_stars: 0
+harvard_long_list_text: Miraculous statue of the Virgin on the high altar.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di Santa Maria Donna Regina
+Alternate Name: Church of St. Mary the Queen
+harvard_long_list_stars: 0
+harvard_long_list_text: Important tombs and museums containing 13th-14th century frescoes by Cavallini.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di Santa Maria la Nuova
+Alternate Name: New Church of St. Mary
+harvard_long_list_stars: 0
+harvard_long_list_text: With adjacent cloisters.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di Santa Maria del Parto
+Alternate Name: Church of St. Mary of Childbirth
+harvard_long_list_stars: 0
+harvard_long_list_text: Tomb of Sannazaro (Tomb of St. Nazarius).
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di Santo Mario di Pledigrotta
+Alternate Name: Church of St. Mary of Pledi-
+grotta 
+harvard_long_list_stars: 0
+harvard_long_list_text: Festival September 7-8.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa del Monte della Liberta
+Alternate Name: Church of the Mount of pity
+harvard_long_list_stars: 0
+harvard_long_list_text: Painting by Caravaggio.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: ChRegion: Campania
+Province: Naples
+Town: Florence
+Name: Coral museum
+Alternate Name: 
+harvard_long_list_stars: 
+harvard_long_list_text: Contains coral museum 
+  
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Grotta Vecchia di Posilippo
+Alternate Name: Roman tunnels to connect Naples with Pozzuol1
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Acerra
+Name: Duomo
+Alternate Name: Cathedral
+harvard_long_list_stars: 1
+harvard_long_list_text: Perhaps built on Roman temple of Hercules
+  
+Region: Campania
+Province: Naples
+Town: Acerra
+Name: Castello
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+  
+Region: Campania
+Province: Naples
+Town: Agnano Terme
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Muse Artistico Industriale
+Alternate Name: Museum of Industrial Art
+harvard_long_list_stars: 
+harvard_long_list_text: Ancient sculpture; mosaics and paintings
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Museo Nazionale
+Alternate Name: National Museum
+harvard_long_list_stars: 
+harvard_long_list_text: Contains most of the objects found in Pompeii and Herculaneum. The most important museum of classical antiquities in the world.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Porta Capuana
+Alternate Name: Capua Gate
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Tomba di Vergillo
+Alternate Name: The reputed tomb of Virgil
+harvard_long_list_stars: 
+harvard_long_list_text: The Latin poet
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Teatro San Carlo
+Alternate Name: St. Charles Theatre
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Regia Universita de111 stud 
+Alternate Name: University
+harvard_long_list_stars: #
+harvard_long_list_text: With Biblloteca Universitoria: 610,000 books, 117 manuscripts, engravings, early printed books, early editions, illustrated books, works on Dante. State property.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Biblloteca Nazionale 
+Alternate Name: National Library
+harvard_long_list_stars: 
+harvard_long_list_text: 1,270,000 books, 10,647 manuscripts, 4,500 engravings. One of Italy's most important libraries. State property.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Bibiloteca Privata Benedetto Croce 
+Alternate Name: Private Library of Benedetto Croce
+harvard_long_list_stars: 
+harvard_long_list_text: Books on Philosophy, History, Literature, many autographs.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Bibiloteca Historiana del Girolamini
+Alternate Name: Library
+harvard_long_list_stars: 
+harvard_long_list_text: Of 283 manuscripts, 46 with illuminations.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Reale Archivo di Stato
+Alternate Name: Royal State Archives
+harvard_long_list_stars: 
+harvard_long_list_text: Manuscripts, 2 with illuminations.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Villa Florentine
+Alternate Name: 
+harvard_long_list_stars: 
+harvard_long_list_text: Contains coral museum.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Grotta Vecchia di Posilippo
+Alternate Name: Roman tunnels to connect Naples with Pozzuol1
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Acerra
+Name: Duomo
+Alternate Name: Cathedral
+harvard_long_list_stars: 1
+harvard_long_list_text: Perhaps built on Roman temple of Hercules.
+
+Region: Campania
+Province: Naples
+Town: Acerra
+Name: Castello
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Agnano Terme
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Arienzo
+Name: Roman bath
+Alternate Name: Imposing ruins of Roman bath
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Arienzo
+Name: Chiesa di Sant' Agostino
+Alternate Name: Church of St. Augustine
+harvard_long_list_stars: 
+harvard_long_list_text: XIII century; wooden statue of the Madonna.
+
+Region: Campania
+Province: Naples
+Town: Arienzo
+Name: Sant' Andrea
+Alternate Name: Church of st. Andrew
+harvard_long_list_stars: 
+harvard_long_list_text: Noteworthy church furniture.
+
+Region: Campania
+Province: Naples
+Town: Arienzo
+Name: Dell'Annunziata
+Alternate Name: Church o the Annunciation
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Atella
+Name: Ruins of the ancient city of Atella
+Alternate Name: Including walls, arches, streets
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Chiosa doll/Annunciata
+Alternate Name: Church o the Annunciation
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Di San Francesco
+Alternate Name: Church of St. Francis
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Santa Maria a plazza
+Alternate Name: Church of St. Mary at the square
+harvard_long_list_stars: 
+harvard_long_list_text: Medieval frescoes.
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Duomo
+Alternate Name: Cathedral
+harvard_long_list_stars: 
+harvard_long_list_text: Founded in the 18th century, much altered later.
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Convento di San Lorenzo
+Alternate Name: Convent of St. Lawrence
+harvard_long_list_stars: 
+harvard_long_list_text: The church of the convent has fine Romanesque portal and antique columns within.
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Palazzo Sanfelice (or Paolizz1Region: Campania
+Province: Naples
+Town: Naples
+Name: Cattedrale
+Alternate Name: Cathedral
+harvard_long_list_stars: 0
+harvard_long_list_text: Dedicated to San Gennaro (St. Januarlus), patron saint of Naples. The Cappella di San Gennaro houses the Tresoro (Treasury) of the Cathedral which includes relics of his blood. Place of ceremony at which the saint's blood liquifies; the first Saturday in May at the Church of Santa Chiara, and September 19th and December 16th at the Cathedral. These ceremonies draw enormous crowds.
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di Sant' Angelo a Illo
+Alternate Name: Church of St. Angelus on the Nile
+harvard_long_list_stars: 0
+harvard_long_list_text: Tomb by Michelozzo and Donatello
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: dell' Annunziata
+Alternate Name: Church of the Annunciation
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: dell' Ascensione
+Alternate Name: Church of the Ascension
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di Santa Chiara
+Alternate Name: Church of Santa Clara
+harvard_long_list_stars: 0
+harvard_long_list_text: Noteworthy XIV century tombs. First Saturday in May, liquefaction of the blood of St. Januarius (see above under Cattedrale).
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di San Domenico Maggiore
+Alternate Name: Church of St. Domenio Major
+harvard_long_list_stars: 0
+harvard_long_list_text: Noteworthy tombs
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di San Filippo Neri
+Alternate Name: Church of St. Philip Neri
+harvard_long_list_stars: 0
+harvard_long_list_text: Baroque paintings
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di San Gennaro
+Alternate Name: Church of St. Januarlus
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: del Gesù Nuovo (Trinità Maggiore)
+Alternate Name: Church of Jesus or Trinity Major
+harvard_long_list_stars: 0
+harvard_long_list_text: Good frescoes
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di San Giorgio Maggiore
+Alternate Name: Church of St. George Major
+harvard_long_list_stars: 0
+harvard_long_list_text: Original structure of the IV century
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: Chiesa di San Giovanni a Carbonara
+Alternate Name: Church of St. John
+harvard_long_list_stars: 0
+harvard_long_list_text: Important tombs
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di San Giovanni Maggiore
+Alternate Name: Church of St. John Major
+harvard_long_list_stars: 0
+harvard_long_list_text: Rests on ruins of temple of Hercules
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: dell' Incoronata
+Alternate Name: Church of the Virgin Encrowned
+harvard_long_list_stars: 0
+harvard_long_list_text: Medieval frescoes
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di San Lorenzo Maggiore
+Alternate Name: Church of St. Lawrence Major
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di Santa Maria del Carmine
+Alternate Name: Carmelite Church of St. Mary
+harvard_long_list_stars: 0
+harvard_long_list_text: Miraculous statue of the Virgin on the high altar
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di Santa Maria Donna Regina
+Alternate Name: Church of St. Mary the Queen
+harvard_long_list_stars: 0
+harvard_long_list_text: Important tombs and museums containing 13th-14th century frescoes by Cavallini
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di Santa Maria la Nuova
+Alternate Name: New Church of St. Mary with adjacent cloisters
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di Santa Maria del Parto
+Alternate Name: Church of St. Mary of Childbirth
+harvard_long_list_stars: 0
+harvard_long_list_text: Tomb of Sannazaro (Tomb of St. Nazarius)
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: di Santo Marlo di Pledigrotta
+Alternate Name: Church of St. Mary of Pledigrotta
+harvard_long_list_stars: 0
+harvard_long_list_text: Festival September 7-8
+
+Region: Campania
+Province: Naples
+Town: Naples
+Name: del Monte della Liberta
+Alternate Name: Church of the Mount of PRegion: Campania
+Province: Naples
+Town: Villa Florentine 
+Name: 
+Alternate Name:
+harvard_long_list_stars: 0 
+harvard_long_list_text: Contains coral museum
+
+Region: Campania
+Province: Naples
+Town: Grotta Vecchia di Posilippo 
+Name: 
+Alternate Name: Roman tunnels to connect Naples with Pozzuoli
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Acerra 
+Name: Duomo 
+Alternate Name: Cathedral
+harvard_long_list_stars: 1
+harvard_long_list_text: Perhaps built on Roman temple of Hercules
+
+Region: Campania
+Province: Naples
+Town: Castello 
+Name: 
+Alternate Name:
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Agnano Terme 
+Name: 
+Alternate Name:
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Muse Artistico Industriale 
+Name: Museum of Industrial Art
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Ancient sculpture, mosaics, and paintings
+
+Region: Campania
+Province: Naples
+Town: Museo Nazionale 
+Name: National Museum
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Contains most of the objects found in Pompeii and Herculaneum
+
+Region: Campania
+Province: Naples
+Town: Porta Capuana 
+Name: 
+Alternate Name: Capua Gate
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Tomba di Vergillo 
+Name: 
+Alternate Name: The reputed tomb of Virgil
+harvard_long_list_stars: 0
+harvard_long_list_text: The Latin poet
+
+Region: Campania
+Province: Naples
+Town: Teatro San Carlo 
+Name: St. Charles Theatre
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Regia Universita de' stud 
+Name: University
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: With Biblioteca Universitaria: 610,000 books, 117 manuscripts, engravings, early printed books, early editions, illustrated books, works on Dante. State property.
+
+Region: Campania
+Province: Naples
+Town: Bibiloteca Nazionale 
+Name: National Library
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 1,270,000 books, 10,647 manuscripts, 4,500 engravings. One of Italy's most important libraries. State property.
+
+Region: Campania
+Province: Naples
+Town: Bibiloteca Privata Benedetto Croce 
+Name: Private Library of Benedetto Croce
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Italy's outstanding philosopher. Books on Philosophy, History, Literature, many autographs.
+
+Region: Campania
+Province: Naples
+Town: Bibiloteca Historiana del Girolamini 
+Name: Library of the Girolamini
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 283 manuscripts, 46 with illuminations
+
+Region: Campania
+Province: Naples
+Town: Reale Archivo di Stato 
+Name: Royal State Archives
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Manuscripts, 2 with illuminations
+
+Region: Campania
+Province: Naples
+Town: Arienzo 
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Imposing remains of Roman bath
+
+Region: Campania
+Province: Naples
+Town: Chiesa di Sant' Agostino 
+Name: Church of St. Augustine
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: XIII century, wooden statue of the Madonna
+
+Region: Campania
+Province: Naples
+Town: Sant' Andrea 
+Name: Church of St. Andrew
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Noteworthy church furniture
+
+Region: Campania
+Province: Naples
+Town: dell'Annunziata 
+Name: Church of the Annunciation
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Atella 
+Name: 
+Alternate Name: Ruins of the ancient city of Atella, Including walls, arches, streets
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Chiosa dell'Annunciata 
+Name: Church of the Annunciation
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Chiesa di San Francesco 
+Name: Church of St. Francis
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Santa Maria a Piazza 
+Name: Church of St. Mary at the square
+Alternate Name: 
+harvard_longRegion: Campania
+Province: Naples
+Town: Aversa
+Name: Chiosa doll/Annunciata
+Alternate Name: Church of the Annunciation
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: di San Francesco
+Alternate Name: Church of St. Francis
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Santa Maria a plazza
+Alternate Name: Church of St. Mary at the square
+harvard_long_list_stars: 0
+harvard_long_list_text: Medieval frescoes
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Duomo
+Alternate Name: Cathedral
+harvard_long_list_stars: 0
+harvard_long_list_text: Founded 18th cent., much altered later
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Convento di San Lorenzo
+Alternate Name: Convent of St. Lawrence
+harvard_long_list_stars: 0
+harvard_long_list_text: The church of the convent has fine Romesque portal and antique columns within.
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Palazzo Sanfelice (or Paolizz1)
+Alternate Name: Sanfelice Palace
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Aversa
+Name: Porta Napoli
+Alternate Name: Naples Cato
+harvard_long_list_stars: 0
+harvard_long_list_text: Renaissance arch
+
+Region: Campania
+Province: Naples
+Town: Bacoli
+Name: Cento Camerelle
+Alternate Name: 
+harvard_long_list_stars: 1
+harvard_long_list_text: Huge Roman water reservoir
+
+Region: Campania
+Province: Naples
+Town: Bacoli
+Name: Piscina Ilirabile
+Alternate Name: 
+harvard_long_list_stars: 2
+harvard_long_list_text: Largest and best preserved water reservoir in the Roman world, built for the Roman fleet stationed in Misenum
+
+Region: Campania
+Province: Naples
+Town: Capua
+Name: Chiesa di San Marcello Maggiore
+Alternate Name: Church of the St. Marcellus Major
+harvard_long_list_stars: 0
+harvard_long_list_text: Remodelled 16th cent.
+
+Region: Campania
+Province: Naples
+Town: Capua
+Name: San Michele a Corte
+Alternate Name: Church of St. Michael
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Capua
+Name: Santi Rufo e Carponlo
+Alternate Name: Church of Saints Rufus and Carponius
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Capua
+Name: Chiesa di San Salvatore Jagedore a Corte
+Alternate Name: Church of St. Savior
+harvard_long_list_stars: 1
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Capua
+Name: Duomo
+Alternate Name: Cathedral
+harvard_long_list_stars: 0
+harvard_long_list_text: Important 11th cent. manuscript (Exultet Roll)
+
+Region: Campania
+Province: Naples
+Town: Capua
+Name: Seminarlo Arciviscovilo
+Alternate Name: Archepiscopal Seminary
+harvard_long_list_stars: 0
+harvard_long_list_text: Two 11th-cent. manuscripts
+
+Region: Campania
+Province: Naples
+Town: Capua
+Name: Palazzo del Municipio
+Alternate Name: City Hall
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Capua
+Name: Muse Provinciale Campano In Palazzo Antignano
+Alternate Name: Provincial Museum of Campania
+harvard_long_list_stars: 0
+harvard_long_list_text: Important Roman and late sculpture
+
+Region: Campania
+Province: Naples
+Town: Capua
+Name: Roman Bridge
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Castellamare al stÃ¡bla
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Castellamare al stÃ¡bla
+Name: Chiesa di Santa Maria Pozzano
+Alternate Name: Church of St. Mary Pozzano
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Castellamare al stÃ¡bla
+Name: Palazzo del Lice
+Alternate Name: Palace of the Lyceum
+harvard_long_list_stars: 0
+harvard_long_list_text: Contains observatory
+
+Region: Campania
+Province: Naples
+Town: Castello di Cisterna
+Name: Castello di Cisterna
+Alternate Name: Cistern Castle
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Castello di CRegion: Campania
+Province: 
+Town: Abellanus
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Second in importance among the ancient Oscan Inscriptions
+  
+Region: Campania
+Province: Naples
+Town: Palma Campania
+Name: Castello Baronale
+Alternate Name: Baronial Castle
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Pompei
+Name: Ancient Pompeii
+Alternate Name: 
+harvard_long_list_stars: 3
+harvard_long_list_text: The most famous ruins of a Roman town, buried during the eruption of Mt. Vesuvius in 79 A.D., now largely excavated, Museum within excavation
+  
+Region: Campania
+Province: Naples
+Town: Pompei
+Name: Chiesa della Santuarto della Madonna del Rosarlo
+Alternate Name: Church of the Sanctuary of the Madonna of the Rosary
+harvard_long_list_stars: 
+harvard_long_list_text: Festival August 15
+  
+Region: Campania
+Province: Naples
+Town: Pompei
+Name: Museo Vesuviano
+Alternate Name: Vesuvius Museum and observatory
+harvard_long_list_stars: 
+harvard_long_list_text: 
+  
+Region: Campania
+Province: Naples
+Town: Portici
+Name: Palazzo Reale
+Alternate Name: Royal Palace
+harvard_long_list_stars: *
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Pozzuoli
+Name: 
+Alternate Name: Remains of the ancient Port
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Pozzuoli
+Name: Piscina Cardito
+Alternate Name: 
+harvard_long_list_stars: *
+harvard_long_list_text: Ancient reservoir still in use
+  
+Region: Campania
+Province: Naples
+Town: Pozzuoli
+Name: Roman amphitheaters
+Alternate Name: 
+harvard_long_list_stars: 2
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Pozzuoli
+Name: Temple of Honor
+Alternate Name: Tempio dell'Onore
+harvard_long_list_stars: **
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Pozzuoli
+Name: Runa of Roman bath
+Alternate Name: Temple of Neptune
+harvard_long_list_stars: **
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Pozzuoli
+Name: Tempio di Serapide
+Alternate Name: 
+harvard_long_list_stars: 
+harvard_long_list_text: Really a building for commercial purposes
+  
+Region: Campania
+Province: Naples
+Town: Pozzuoli
+Name: Roman circus
+Alternate Name: 
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Pozzuoli
+Name: Duomo
+Alternate Name: Cathedral
+harvard_long_list_stars: 
+harvard_long_list_text: Built on the temple of Augustus
+  
+Region: Campania
+Province: Naples
+Town: Pozzuoli
+Name: Convento del Cappuccini
+Alternate Name: Capuchin Convent
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Pozzuoli
+Name: Presario
+Alternate Name: 
+harvard_long_list_stars: 
+harvard_long_list_text: Environs: At San Felice, ruins of ancient theater
+  
+Region: Campania
+Province: Naples
+Town: Punta della Campanella
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Punta della Campanella
+Name: Torre Minerva
+Alternate Name: Minerva Tower
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: Naples
+Town: Roccamonfina
+Name: Santuario di Santa Maria del Lattan1
+Alternate Name: Sanctuary of St. Mary
+harvard_long_list_stars: 
+harvard_long_list_text: With choir and cloister
+  
+Region: Campania
+Province: Caserta
+Town: Sant' Angelo In Formis
+Name: Basilica di Sant'Angelo In Formis
+Alternate Name: Church of St. Angel
+harvard_long_list_stars: 
+harvard_long_list_text: Important Medieval frescoes
+  
+Region: Campania
+Province: Caserta
+Town: Santa Maria Capua Vetere
+Name: Musco Civleo
+Alternate Name: Communal Museum
+harvard_long_list_stars: 
+harvard_long_list_text: Greek and Roman antiquities
+  
+Region: Campania
+Province: Caserta
+Town: Santa Maria Capua Vetere
+Name: Covered corridor belonging to a Roman bath
+Alternate Name: 
+harvard_long_list_stars: 
+harvard_long_list_text: 
+  
+Region: Campania
+Province: Caserta
+Town: Santa Maria Capua Vetere
+Name: Roman theater
+Alternate Name: 
+harvard_long_list_stars: **
+harvard_long_list_text: 
+  
+Region: Campania
+Province: Caserta
+Town: Anfiteatro Campano
+Name: 
+Alternate Name: One of the most important Roman amphitheaters
+harvard_long_list_stars: **
+harvard_long_list_text: 
+
+Region: Campania
+Region: Campania
+Province: 
+Town: Arpala
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: 
+Town: Buonalbergo
+Name: Chiesa della Madonna della ilacchia
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Containing a Byzantine statue of the Madonna
+
+Region: Campania
+Province: 
+Town: Calazzo
+Name: Forum of the ancient town of Calatia
+Alternate Name: Plazza Porta Vetore
+harvard_long_list_stars: 
+harvard_long_list_text: Beneath it is a reservoir
+
+Region: Campania
+Province: 
+Town: Calazzo
+Name: Chiesa dell'Annunziata
+Alternate Name: Church of the Annunciation
+harvard_long_list_stars: 0
+harvard_long_list_text: Renaissance portal
+
+Region: Campania
+Province: 
+Town: Calazzo
+Name: Cattedrale
+Alternate Name: Cathedral
+harvard_long_list_stars: 
+harvard_long_list_text: Remodelled 13th century
+
+Region: Campania
+Province: 
+Town: Castollo
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Lombard period castle
+
+Region: Campania
+Province: 
+Town: Cusano Mutr1
+Name: Chiesa di San Micola
+Alternate Name: Church of St. Nicholas
+harvard_long_list_stars: 0
+harvard_long_list_text: Precious silver reliquary of XIV century containing part of Christ's crown of thorns
+
+Region: Campania
+Province: 
+Town: Cusano Mutr1
+Name: Chiesa di Santa Marla del Castagneto
+Alternate Name: Church of St. Mary
+harvard_long_list_stars: 0
+harvard_long_list_text: Byzantine statue of the Madonna in wood
+
+Region: Campania
+Province: 
+Town: Falcchio
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Very ancient walls of polygonal masonry; Roman bridge
+
+Region: Campania
+Province: 
+Town: Forchia
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: 
+Town: MARCONO
+Name: Palazzo Coleanti
+Alternate Name: Colegant1 Palace
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: 
+Town: MARCONO
+Name: Palazzo Vcc1
+Alternate Name: Ucc1 Palace
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: 
+Town: Padul1
+Name: Convento di Santo Marla di Loreto
+Alternate Name: Convent of St. Mary of Loreto
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: 
+Town: Pescolamazza
+Name: Chiosa ai San Salvatore
+Alternate Name: Church of the Holy Savior
+harvard_long_list_stars: #
+harvard_long_list_text: Containing the boy of the martyr St. Roparata, an object of great veneration
+
+Region: Campania
+Province: 
+Town: Pledimonte dIAlife
+Name: 
+Alternate Name: 
+harvard_long_list_stars: 0
+harvard_long_list_text: Walls consisting of large blocks, particularly on Monte C1la
+
+Region: Campania
+Province: 
+Town: Pledimonte dIAlife
+Name: Museo CÃ­vico
+Alternate Name: Municipal Museum
+harvard_long_list_stars: 
+harvard_long_list_text: Contains prehistorical collection
+
+Region: Campania
+Province: 
+Town: Pledimonte dIAlife
+Name: Chiosa dell/Annunzlata
+Alternate Name: Church of the Annunciation
+harvard_long_list_stars: 0
+harvard_long_list_text: 
+
+Region: Campania
+Province: 
+Town: Pledimonte dIAlife
+Name: d1 San Blagio
+Alternate Name: Church of St. Blaize
+harvard_long_list_stars: 0
+harvard_long_list_text: Mediaeval frescoes
+
+Region: Campania
+Province: 
+Town: Pledimonte dIAlife
+Name: San Salvatore
+Alternate Name: Church of the Holy Savior
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: 
+Town: Pledimonte dIAlife
+Name: Tomaso d'Aquino
+Alternate Name: Church of St. Thomas Aquinas
+harvard_long_list_stars: 
+harvard_long_list_text: Built of Roman temple
+
+Region: Campania
+Province: 
+Town: Pledimonte dIAlife
+Name: Museo Civico
+Alternate Name: Municipal Museum
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: 
+Town: Sant'Agata del Got1
+Name: Chiosa dell(Annunzlata
+Alternate Name: Church of the Annunciation
+harvard_long_list_stars: 
+harvard_long_list_text: 
+
+Region: Campania
+Province: 
+Town: Sant'Agata del Got1
+Name: di Santa Menna
+Alternate Name: Church of St. Menna
+harvard_long_list_stars:
+harvard_long_list_text:
