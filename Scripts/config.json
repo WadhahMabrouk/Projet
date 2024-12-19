@@ -4,7 +4,7 @@
         "api_key": "K86498511088957",
         "language": "eng",
         "output_format": "txt",
-        "input_file": "C:/Users/mabrouk/Pictures/Screenshots/Capture d'\u00e9cran 2024-12-11 151927.png",
+        "input_file": "C:/Recette.png",
         "output_dir": "my_chunks/output.txt",
         "max_file_size": 1000000
     },
@@ -22,7 +22,7 @@
         "model_name": "mistral-large-latest",
         "chunk_size": 1024,
         "input_file": "../OCR/ocr_output.txt",
-        "prompt": "Here are some sample entries from our source document which obey this structure:\n\n  REGION OF CAMPANIA\n  Province of Avellino\n  MONTEVERGINE (5 miles from Avellino)\n  Convent of Montevergine (Mt. of the Virgin), famous pilgrimage center. Festivals,\n  Whitsuntide (7th Sunday after Easter); September 7-8th.\n  Province of Benevento\n  BENEVENTO\n  Arco di Traiano (Aroh of Trajan) also called Port' Aurea, Roman triumphal arch.\n  Cattedrale; famous bronze doors, 13th century; treasury;\n  Bibiloteca Capitolare\n  (Cathedral Library), over 40 manuscripts, 9th to 13th century.\n  CUSANO MUTRI - San Nicola (Church of St. Nicholas); silver reliquary, XIV century,\n  containing part of crown of thorns.\n  PESCOLAMAZZA - San Salvatore (Church of the Holy Savior) containing the body of the\n  martyr St. Reparata, much revered.\n  TELESE - Well-preserved walls of the ancient town of Telesia, with city gates.\n\n  For these given data, we need you to return information of the following structure:\n\n  Region: Campania\n  Province: Avellino\n  Town: Montevergine\n  Name: Convent of Montevergine\n  Alternate Name: Mt. of the Virgin Convent\n  harvard_short_list_text: Famous pilgrimage center. Festivals, Whitsuntide (7th Sunday after Easter); September 7-8th.",
+        "prompt": "Analyze the following recipe and extract all actions as a list of steps. For each action, specify:\n\nThe action name (e.g., mix, pour, chop).\nThe target ingredient(s) or object(s) (e.g., flour, eggs).\nThe tools or utensils used (if mentioned).\nAdditional context like quantities, locations, or temperatures.\nModel the result in a RDF-star graph.",
         "output_file": "C:/Users/mabrouk/culturalheritage13/Scripts/input-data/result.txt"
     }
 }
