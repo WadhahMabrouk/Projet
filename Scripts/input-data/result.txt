@@ -1,203 +1,105 @@
-Here is the list of steps with the specified details for each action in the recipe:
+Here is the list of steps with the specified details for each action:
 
-1. **Action Name:** Pour
-   - **Target Ingredient(s):** Farine (flour)
-   - **Tools/Utensils:** Un saladier (a bowl)
-   - **Additional Context:** Quantity: 250 g
+1. **Action Name:** Verse
+   **Target Ingredient(s):** Farine
+   **Tools/Utensils Used:** Saladier
+   **Additional Context:** None
 
 2. **Action Name:** Add
-   - **Target Ingredient(s):** Sel (salt)
-   - **Tools/Utensils:** None mentioned
-   - **Additional Context:** Form a well in the center of the flour
+   **Target Ingredient(s):** Sel
+   **Tools/Utensils Used:** None
+   **Additional Context:** Form a well (puit)
 
 3. **Action Name:** Add
-   - **Target Ingredient(s):** Œufs (eggs)
-   - **Tools/Utensils:** None mentioned
-   - **Additional Context:** Add to the center of the well
+   **Target Ingredient(s):** Œufs
+   **Tools/Utensils Used:** None
+   **Additional Context:** Add to the center
 
 4. **Action Name:** Mix
-   - **Target Ingredient(s):** Flour, salt, eggs
-   - **Tools/Utensils:** Un fouet (a whisk)
-   - **Additional Context:** Gradually add lait (milk) and huile (oil) until a smooth batter is formed
+   **Target Ingredient(s):** Œufs, Lait, Huile
+   **Tools/Utensils Used:** Fouet
+   **Additional Context:** Add lait and huile progressively until the batter is fluid
 
-5. **Action Name:** Rest
-   - **Target Ingredient(s):** Batter
-   - **Tools/Utensils:** None mentioned
-   - **Additional Context:** Rest for about 1 hour
+5. **Action Name:** Let rest
+   **Target Ingredient(s):** Pâte
+   **Tools/Utensils Used:** None
+   **Additional Context:** For about 1 hour
 
 6. **Action Name:** Pour
-   - **Target Ingredient(s):** Batter
-   - **Tools/Utensils:** Une louche (a ladle), une poêle à crêpes (a crêpe pan)
-   - **Additional Context:** Pour one ladleful of batter into a well-heated pan
+   **Target Ingredient(s):** Pâte
+   **Tools/Utensils Used:** Louche, Poêle
+   **Additional Context:** Poêle should be well heated
 
 7. **Action Name:** Spread
-   - **Target Ingredient(s):** Batter
-   - **Tools/Utensils:** None mentioned
-   - **Additional Context:** Spread the batter and pour off any excess
+   **Target Ingredient(s):** Pâte
+   **Tools/Utensils Used:** Poêle
+   **Additional Context:** Reverse the surplus of pâte
 
 8. **Action Name:** Cook
-   - **Target Ingredient(s):** Batter (crêpe)
-   - **Tools/Utensils:** Une poêle à crêpes (a crêpe pan)
-   - **Additional Context:** Cook each side for one minute
+   **Target Ingredient(s):** Crêpe
+   **Tools/Utensils Used:** Poêle
+   **Additional Context:** Each side for 1 minute
 
-9. **Action Name:** Serve
-   - **Target Ingredient(s):** Cooked crêpe
-   - **Tools/Utensils:** None mentioned
-   - **Additional Context:** Serve hot
+9. **Action Name:** Eat
+   **Target Ingredient(s):** Crêpe
+   **Tools/Utensils Used:** None
+   **Additional Context:** While hot
 
-Additional optional step for flavoring:
-- **Action Name:** Add
-  - **Target Ingredient(s):** Sucre vanillé (vanilla sugar), cannelle (cinnamon), or eau de fleur d'oranger (orange blossom water)
-  - **Tools/Utensils:** None mentioned
-  - **Additional Context:** To flavor the batterTo analyze the recipe and extract all actions as a list of steps, we need to identify each action, the target ingredient(s) or object(s), the tools or utensils used, and any additional context. Then, we will model the result in an RDF-star graph.
-
-### List of Steps
-
-1. **Verser**
-   - **Target Ingredient(s)**: Farine
-   - **Tools/Utensils**: Saladier
-   - **Additional Context**: Into the saladier
-
-2. **Ajouter**
-   - **Target Ingredient(s)**: Sel
-   - **Tools/Utensils**: Saladier
-   - **Additional Context**: To form a puit
-
-3. **Ajouter**
-   - **Target Ingredient(s)**: Œufs
-   - **Tools/Utensils**: Saladier
-   - **Additional Context**: At the center
-
-4. **Mélanger**
-   - **Target Ingredient(s)**: Farine, œufs, lait, huile
-   - **Tools/Utensils**: Fouet
-   - **Additional Context**: Add lait and huile progressively until the mixture is fluid
-
-5. **Laisser reposer**
-   - **Target Ingredient(s)**: Pâte
-   - **Tools/Utensils**: None
-   - **Additional Context**: For about 1 hour
-
-6. **Verser**
-   - **Target Ingredient(s)**: Pâte
-   - **Tools/Utensils**: Louche, poêle à crêpes
-   - **Additional Context**: One louche of pâte into the hot poêle
-
-7. **Étaler**
-   - **Target Ingredient(s)**: Pâte
-   - **Tools/Utensils**: Poêle à crêpes
-   - **Additional Context**: Spread the pâte and return the surplus pâte
-
-8. **Cuire**
-   - **Target Ingredient(s)**: Crêpe
-   - **Tools/Utensils**: Poêle à crêpes
-   - **Additional Context**: Each side for one minute
-
-9. **Manger**
-   - **Target Ingredient(s)**: Crêpe
-   - **Tools/Utensils**: None
-   - **Additional Context**: Hot
-
-### RDF-star Graph
-
-To model the recipe in an RDF-star graph, we will represent each action as a node with properties for the target ingredient(s), tools/utensils, and additional context.
+### RDF-star Graph Representation
 
 ```turtle
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ex: <http://example.org/recipe#> .
 
-# Step 1
-ex:Step1 rdf:type ex:Action ;
-         ex:actionName "Verser" ;
-         ex:targetIngredient ex:Farine ;
-         ex:tool ex:Saladier ;
-         ex:context "Into the saladier" .
+ex:Step1 a ex:RecipeStep ;
+    ex:actionName "Verse" ;
+    ex:targetIngredient ex:Farine ;
+    ex:toolUsed ex:Saladier .
 
-# Step 2
-ex:Step2 rdf:type ex:Action ;
-         ex:actionName "Ajouter" ;
-         ex:targetIngredient ex:Sel ;
-         ex:tool ex:Saladier ;
-         ex:context "To form a puit" .
+ex:Step2 a ex:RecipeStep ;
+    ex:actionName "Add" ;
+    ex:targetIngredient ex:Sel ;
+    ex:additionalContext "Form a well (puit)" .
 
-# Step 3
-ex:Step3 rdf:type ex:Action ;
-         ex:actionName "Ajouter" ;
-         ex:targetIngredient ex:Œufs ;
-         ex:tool ex:Saladier ;
-         ex:context "At the center" .
+ex:Step3 a ex:RecipeStep ;
+    ex:actionName "Add" ;
+    ex:targetIngredient ex:Oeufs ;
+    ex:additionalContext "Add to the center" .
 
-# Step 4
-ex:Step4 rdf:type ex:Action ;
-         ex:actionName "Mélanger" ;
-         ex:targetIngredient ex:Farine, ex:Œufs, ex:Lait, ex:Huile ;
-         ex:tool ex:Fouet ;
-         ex:context "Add lait and huile progressively until the mixture is fluid" .
+ex:Step4 a ex:RecipeStep ;
+    ex:actionName "Mix" ;
+    ex:targetIngredient ex:Oeufs, ex:Lait, ex:Huile ;
+    ex:toolUsed ex:Fouet ;
+    ex:additionalContext "Add lait and huile progressively until the batter is fluid" .
 
-# Step 5
-ex:Step5 rdf:type ex:Action ;
-         ex:actionName "Laisser reposer" ;
-         ex:targetIngredient ex:Pâte ;
-         ex:context "For about 1 hour" .
+ex:Step5 a ex:RecipeStep ;
+    ex:actionName "Let rest" ;
+    ex:targetIngredient ex:Pate ;
+    ex:additionalContext "For about 1 hour" .
 
-# Step 6
-ex:Step6 rdf:type ex:Action ;
-         ex:actionName "Verser" ;
-         ex:targetIngredient ex:Pâte ;
-         ex:tool ex:Louche, ex:PoêleÀCrêpes ;
-         ex:context "One louche of pâte into the hot poêle" .
+ex:Step6 a ex:RecipeStep ;
+    ex:actionName "Pour" ;
+    ex:targetIngredient ex:Pate ;
+    ex:toolUsed ex:Louche, ex:Poele ;
+    ex:additionalContext "Poêle should be well heated" .
 
-# Step 7
-ex:Step7 rdf:type ex:Action ;
-         ex:actionName "Étaler" ;
-         ex:targetIngredient ex:Pâte ;
-         ex:tool ex:PoêleÀCrêpes ;
-         ex:context "Spread the pâte and return the surplus pâte" .
+ex:Step7 a ex:RecipeStep ;
+    ex:actionName "Spread" ;
+    ex:targetIngredient ex:Pate ;
+    ex:toolUsed ex:Poele ;
+    ex:additionalContext "Reverse the surplus of pâte" .
 
-# Step 8
-ex:Step8 rdf:type ex:Action ;
-         ex:actionName "Cuire" ;
-         ex:targetIngredient ex:Crêpe ;
-         ex:tool ex:PoêleÀCrêpes ;
-         ex:context "Each side for one minute" .
+ex:Step8 a ex:RecipeStep ;
+    ex:actionName "Cook" ;
+    ex:targetIngredient ex:Crepe ;
+    ex:toolUsed ex:Poele ;
+    ex:additionalContext "Each side for 1 minute" .
 
-# Step 9
-ex:Step9 rdf:type ex:Action ;
-         ex:actionName "Manger" ;
-         ex:targetIngredient ex:Crêpe ;
-         ex:context "Hot" .
-
-# Ingredients
-ex:Farine rdf:type ex:Ingredient ;
-          ex:quantity "250 g" .
-
-ex:Sel rdf:type ex:Ingredient ;
-       ex:quantity "une pincée" .
-
-ex:Œufs rdf:type ex:Ingredient ;
-        ex:quantity "2" .
-
-ex:Lait rdf:type ex:Ingredient ;
-        ex:quantity "½ litre" .
-
-ex:Huile rdf:type ex:Ingredient ;
-         ex:quantity "une cuillère à soupe" .
-
-ex:Pâte rdf:type ex:Ingredient .
-
-ex:Crêpe rdf:type ex:Ingredient .
-
-# Tools
-ex:Saladier rdf:type ex:Tool .
-
-ex:Fouet rdf:type ex:Tool .
-
-ex:Louche rdf:type ex:Tool .
-
-ex:PoêleÀCrêpes rdf:type ex:Tool .
-
-ex:Plat rdf:type ex:Tool .
+ex:Step9 a ex:RecipeStep ;
+    ex:actionName "Eat" ;
+    ex:targetIngredient ex:Crepe ;
+    ex:additionalContext "While hot" .
 ```
 
-This RDF-star graph models the recipe steps, ingredients, tools, and additional context, providing a structured representation of the recipe.
+In this RDF-star graph, each step is represented as an instance of `ex:RecipeStep` with properties for the action name, target ingredient(s), tools used, and additional context. Each ingredient and tool is represented as an individual resource.

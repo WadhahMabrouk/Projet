@@ -4,7 +4,7 @@
         "api_key": "K86498511088957",
         "language": "eng",
         "output_format": "txt",
-        "input_file": "C:/Recette.png",
+        "input_file": "/Users/mahmoud/Documents/Work/Tsukuba 2024-2025/Fall 2024/Directed Research in Computer Science/Knowledge Graphs Using LLMs/Projet/Scripts/input-data/Recette.png",
         "output_dir": "my_chunks/output.txt",
         "max_file_size": 1000000
     },
@@ -23,6 +23,6 @@
         "chunk_size": 1024,
         "input_file": "../OCR/ocr_output.txt",
         "prompt": "Analyze the following recipe and extract all actions as a list of steps. For each action, specify:\n\nThe action name (e.g., mix, pour, chop).\nThe target ingredient(s) or object(s) (e.g., flour, eggs).\nThe tools or utensils used (if mentioned).\nAdditional context like quantities, locations, or temperatures.\nModel the result in a RDF-star graph.",
-        "output_file": "C:/Users/mabrouk/culturalheritage13/Scripts/input-data/result.txt"
+        "output_file": "/Users/mahmoud/Documents/Work/Tsukuba 2024-2025/Fall 2024/Directed Research in Computer Science/Knowledge Graphs Using LLMs/Projet/Scripts/input-data/result.txt"
     }
 }

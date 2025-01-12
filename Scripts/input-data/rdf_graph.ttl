@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/recipe#> .
+
+ex:Step1 a ex:RecipeStep ;
+    ex:actionName "Verse" ;
+    ex:targetIngredient ex:Farine ;
+    ex:toolUsed ex:Saladier .
+
+ex:Step2 a ex:RecipeStep ;
+    ex:actionName "Add" ;
+    ex:targetIngredient ex:Sel ;
+    ex:additionalContext "Form a well (puit)" .
+
+ex:Step3 a ex:RecipeStep ;
+    ex:actionName "Add" ;
+    ex:targetIngredient ex:Oeufs ;
+    ex:additionalContext "Add to the center" .
+
+ex:Step4 a ex:RecipeStep ;
+    ex:actionName "Mix" ;
+    ex:targetIngredient ex:Oeufs, ex:Lait, ex:Huile ;
+    ex:toolUsed ex:Fouet ;
+    ex:additionalContext "Add lait and huile progressively until the batter is fluid" .
+
+ex:Step5 a ex:RecipeStep ;
+    ex:actionName "Let rest" ;
+    ex:targetIngredient ex:Pate ;
+    ex:additionalContext "For about 1 hour" .
+
+ex:Step6 a ex:RecipeStep ;
+    ex:actionName "Pour" ;
+    ex:targetIngredient ex:Pate ;
+    ex:toolUsed ex:Louche, ex:Poele ;
+    ex:additionalContext "Poêle should be well heated" .
+
+ex:Step7 a ex:RecipeStep ;
+    ex:actionName "Spread" ;
+    ex:targetIngredient ex:Pate ;
+    ex:toolUsed ex:Poele ;
+    ex:additionalContext "Reverse the surplus of pâte" .
+
+ex:Step8 a ex:RecipeStep ;
+    ex:actionName "Cook" ;
+    ex:targetIngredient ex:Crepe ;
+    ex:toolUsed ex:Poele ;
+    ex:additionalContext "Each side for 1 minute" .
+
+ex:Step9 a ex:RecipeStep ;
+    ex:actionName "Eat" ;
+    ex:targetIngredient ex:Crepe ;
+    ex:additionalContext "While hot" .
