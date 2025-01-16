@@ -22,7 +22,7 @@
         "model_name": "mistral-large-latest",
         "chunk_size": 1024,
         "input_file": "../OCR/ocr_output.txt",
-        "prompt": "Analyze the following recipe and extract all actions as a list of steps. For each action, specify:\n\nThe action name (e.g., mix, pour, chop).\nThe target ingredient(s) or object(s) (e.g., flour, eggs).\nThe tools or utensils used (if mentioned).\nAdditional context like quantities, locations, or temperatures.\nModel the result in a RDF-star graph.",
+        "prompt": "You are an expert in knowledge graphs and ontologies. Your task is to map text data about recipes to the predefined classes below. You should write the output in Turtle rdf syntax that model the recipe given in the text. You can infer relationship names from the classes.\n\nList of Classes with their attributes:\nRecipe (label:str,description:str,steps:[Step],ingredients:[Ingredient],categories:[str])\nStep (order:int,utensils:[Utensil],inputs:[FoodItem],outputs:[FoodItem],Action:str)\nIngredient (food_item:FoodItem,amount:[Quantity])\nUtensil (label:str)\nFoodItem (state:str)\nAction (label:str)\nQuantity (value:)\nFoodType (label:str)\nUnit (label:str)\nModel the result in an RDF-star graph.",
         "output_file": "/Users/mahmoud/Documents/Work/Tsukuba 2024-2025/Fall 2024/Directed Research in Computer Science/Knowledge Graphs Using LLMs/Projet/Scripts/input-data/result.txt"
     }
 }
