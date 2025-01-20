@@ -4,6 +4,7 @@ from tkinter.scrolledtext import ScrolledText
 import subprocess
 import os
 import json
+from parseRDF import parseRdfFunc
 
 # Set the color scheme
 primary_color = "#f17eac"
@@ -241,3 +242,5 @@ button_gpt.pack()
 
 # Start the Tkinter event loop
 window.mainloop()
+parseRdfFunc()
+

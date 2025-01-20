@@ -1,0 +1,9 @@
+Step Number,Duration,Text,Resultant State,Utensils,Purposes
+1,2 minutes,Pour the flour into the mixing bowl.,Flour is ready in the mixing bowl.,Mixing Bowl,Holding ingredients for mixing
+2,1 minute,Add the salt and create a well in the center.,Well formed in the flour with salt.,Mixing Bowl,Holding ingredients for mixing
+3,1 minute,Add the eggs into the well.,Eggs placed in the center of the flour.,Mixing Bowl,Holding ingredients for mixing
+4,5 minutes,Gradually mix while adding milk and oil until smooth batter is formed.,Smooth and fluid batter achieved.,"Mixing Bowl, Whisk","Holding ingredients for mixing, Mixing ingredients into a smooth batter"
+6,1 minute,Pour a ladle of batter into a hot crêpe pan.,Batter spread evenly in the crêpe pan.,"Ladle, Crêpe Pan","Pouring batter into the pan, Cooking crêpes"
+7,30 seconds,Spread the batter evenly and remove excess.,Thin batter layer in the crêpe pan.,Crêpe Pan,Cooking crêpes
+8,1 minute per side,Cook each side of the crêpe for 1 minute.,Golden-brown crêpes cooked on both sides.,Crêpe Pan,Cooking crêpes
+9,0 minutes,Serve and eat warm.,Crêpes served and ready to eat.,Plate,Plating crêpes after cooking

@@ -102,4 +102,199 @@ ex:Step9 a ex:RecipeStep ;
     ex:additionalContext "While hot" .
 ```
 
-In this RDF-star graph, each step is represented as an instance of `ex:RecipeStep` with properties for the action name, target ingredient(s), tools used, and additional context. Each ingredient and tool is represented as an individual resource.
+In this RDF-star graph, each step is represented as an instance of `ex:RecipeStep` with properties for the action name, target ingredient(s), tools used, and additional context. Each ingredient and tool is represented as an individual resource.```turtle
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/recipe#> .
+
+ex:Recipe_Crepes a ex:Recipe ;
+    ex:label "Recette des crêpes" ;
+    ex:description "Recette pour préparer une douzaine de crêpes." ;
+    ex:steps (
+        ex:Step_1
+        ex:Step_2
+        ex:Step_3
+        ex:Step_4
+        ex:Step_5
+        ex:Step_6
+        ex:Step_7
+        ex:Step_8
+        ex:Step_9
+    ) ;
+    ex:ingredients (
+        ex:Ingredient_Eggs
+        ex:Ingredient_Flour
+        ex:Ingredient_Milk
+        ex:Ingredient_Salt
+        ex:Ingredient_Oil
+    ) ;
+    ex:categories ("Dessert", "Breakfast") .
+
+ex:Step_1 a ex:Step ;
+    ex:order 1 ;
+    ex:utensils (ex:Utensil_Saladier) ;
+    ex:inputs (ex:FoodItem_Flour) ;
+    ex:action ex:Action_Pour .
+
+ex:Step_2 a ex:Step ;
+    ex:order 2 ;
+    ex:utensils (ex:Utensil_Saladier) ;
+    ex:inputs (ex:FoodItem_Salt) ;
+    ex:action ex:Action_Add .
+
+ex:Step_3 a ex:Step ;
+    ex:order 3 ;
+    ex:utensils (ex:Utensil_Saladier) ;
+    ex:inputs (ex:FoodItem_Eggs) ;
+    ex:action ex:Action_Add .
+
+ex:Step_4 a ex:Step ;
+    ex:order 4 ;
+    ex:utensils (ex:Utensil_Fouet) ;
+    ex:inputs (ex:FoodItem_Milk, ex:FoodItem_Oil) ;
+    ex:outputs (ex:FoodItem_Batter) ;
+    ex:action ex:Action_Mix .
+
+ex:Step_5 a ex:Step ;
+    ex:order 5 ;
+    ex:utensils () ;
+    ex:inputs (ex:FoodItem_Batter) ;
+    ex:action ex:Action_Rest .
+
+ex:Step_6 a ex:Step ;
+    ex:order 6 ;
+    ex:utensils (ex:Utensil_Louche, ex:Utensil_Poele) ;
+    ex:inputs (ex:FoodItem_Batter) ;
+    ex:action ex:Action_Pour .
+
+ex:Step_7 a ex:Step ;
+    ex:order 7 ;
+    ex:utensils (ex:Utensil_Poele) ;
+    ex:inputs (ex:FoodItem_Batter) ;
+    ex:action ex:Action_Spread .
+
+ex:Step_8 a ex:Step ;
+    ex:order 8 ;
+    ex:utensils (ex:Utensil_Poele) ;
+    ex:inputs (ex:FoodItem_Batter) ;
+    ex:outputs (ex:FoodItem_Crepe) ;
+    ex:action ex:Action_Cook .
+
+ex:Step_9 a ex:Step ;
+    ex:order 9 ;
+    ex:utensils () ;
+    ex:inputs (ex:FoodItem_Crepe) ;
+    ex:action ex:Action_Serve .
+
+ex:Ingredient_Eggs a ex:Ingredient ;
+    ex:food_item ex:FoodItem_Eggs ;
+    ex:amount (ex:Quantity_Eggs) .
+
+ex:Ingredient_Flour a ex:Ingredient ;
+    ex:food_item ex:FoodItem_Flour ;
+    ex:amount (ex:Quantity_Flour) .
+
+ex:Ingredient_Milk a ex:Ingredient ;
+    ex:food_item ex:FoodItem_Milk ;
+    ex:amount (ex:Quantity_Milk) .
+
+ex:Ingredient_Salt a ex:Ingredient ;
+    ex:food_item ex:FoodItem_Salt ;
+    ex:amount (ex:Quantity_Salt) .
+
+ex:Ingredient_Oil a ex:Ingredient ;
+    ex:food_item ex:FoodItem_Oil ;
+    ex:amount (ex:Quantity_Oil) .
+
+ex:Utensil_Saladier a ex:Utensil ;
+    ex:label "saladier" .
+
+ex:Utensil_Fouet a ex:Utensil ;
+    ex:label "fouet" .
+
+ex:Utensil_Louche a ex:Utensil ;
+    ex:label "louche" .
+
+ex:Utensil_Poele a ex:Utensil ;
+    ex:label "poêle à crêpes" .
+
+ex:Utensil_Plat a ex:Utensil ;
+    ex:label "plat" .
+
+ex:FoodItem_Eggs a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:FoodItem_Flour a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:FoodItem_Milk a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:FoodItem_Salt a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:FoodItem_Oil a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:FoodItem_Batter a ex:FoodItem ;
+    ex:state "mixed" .
+
+ex:FoodItem_Crepe a ex:FoodItem ;
+    ex:state "cooked" .
+
+ex:Action_Pour a ex:Action ;
+    ex:label "Verser" .
+
+ex:Action_Add a ex:Action ;
+    ex:label "Ajouter" .
+
+ex:Action_Mix a ex:Action ;
+    ex:label "Mélanger" .
+
+ex:Action_Rest a ex:Action ;
+    ex:label "Laisser reposer" .
+
+ex:Action_Spread a ex:Action ;
+    ex:label "Étaler" .
+
+ex:Action_Cook a ex:Action ;
+    ex:label "Cuire" .
+
+ex:Action_Serve a ex:Action ;
+    ex:label "Manger" .
+
+ex:Quantity_Eggs a ex:Quantity ;
+    ex:value 2 ;
+    ex:unit ex:Unit_Pieces .
+
+ex:Quantity_Flour a ex:Quantity ;
+    ex:value 250 ;
+    ex:unit ex:Unit_Grams .
+
+ex:Quantity_Milk a ex:Quantity ;
+    ex:value 0.5 ;
+    ex:unit ex:Unit_Liters .
+
+ex:Quantity_Salt a ex:Quantity ;
+    ex:value 1 ;
+    ex:unit ex:Unit_Pinches .
+
+ex:Quantity_Oil a ex:Quantity ;
+    ex:value 1 ;
+    ex:unit ex:Unit_Spoons .
+
+ex:Unit_Pieces a ex:Unit ;
+    ex:label "pieces" .
+
+ex:Unit_Grams a ex:Unit ;
+    ex:label "grams" .
+
+ex:Unit_Liters a ex:Unit ;
+    ex:label "liters" .
+
+ex:Unit_Pinches a ex:Unit ;
+    ex:label "pinches" .
+
+ex:Unit_Spoons a ex:Unit ;
+    ex:label "spoons" .
+```

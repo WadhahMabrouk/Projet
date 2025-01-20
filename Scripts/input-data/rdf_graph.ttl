@@ -1,52 +1,126 @@
+@prefix : <http://example.org/recipes#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix ex: <http://example.org/recipe#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:Step1 a ex:RecipeStep ;
-    ex:actionName "Verse" ;
-    ex:targetIngredient ex:Farine ;
-    ex:toolUsed ex:Saladier .
+:SmokedSalmonPasta a :Recipe ;
+    :label "Smoked Salmon Pasta" ;
+    :description "A quick and delicious pasta dish with smoked salmon, spinach, spring onions, and a zesty lemon-Parmesan sauce. Perfect for a single serving." ;
+    :steps (
+        :Step1
+        :Step2
+        :Step3
+    ) ;
+    :ingredients (
+        :Ingredient_LasagneSheets
+        :Ingredient_SpringOnions
+        :Ingredient_Spinach
+        :Ingredient_SmokedSalmon
+        :Ingredient_Lemon
+        :Ingredient_Parmesan
+        :Ingredient_CottageCheese
+    ) ;
+    :categories ["Pasta", "Quick Meals", "Seafood"] .
 
-ex:Step2 a ex:RecipeStep ;
-    ex:actionName "Add" ;
-    ex:targetIngredient ex:Sel ;
-    ex:additionalContext "Form a well (puit)" .
+### Steps ###
+:Step1 a :Step ;
+    :order 1 ;
+    :utensils [:label "28cm frying pan"] ;
+    :inputs (
+        :FoodItem_SpringOnions
+        :FoodItem_Spinach
+        :FoodItem_SmokedSalmon
+        :FoodItem_LemonZest
+        :FoodItem_ParmesanGrated
+        :FoodItem_LasagneStrips
+    ) ;
+    :outputs [:label "Sautéed vegetable and salmon mixture"] ;
+    :Action [:label "Sauté ingredients on high heat in a frying pan with olive oil until fragrant"] .
 
-ex:Step3 a ex:RecipeStep ;
-    ex:actionName "Add" ;
-    ex:targetIngredient ex:Oeufs ;
-    ex:additionalContext "Add to the center" .
+:Step2 a :Step ;
+    :order 2 ;
+    :utensils [:label "28cm frying pan"] ;
+    :inputs (
+        :FoodItem_SauteedMixture
+        :FoodItem_LasagneStrips
+        :FoodItem_BoilingWater
+    ) ;
+    :outputs [:label "Cooked pasta with a light sauce"] ;
+    :Action [:label "Add boiling water to cover pasta; cook for 4 minutes until water is absorbed and a light sauce forms"] .
 
-ex:Step4 a ex:RecipeStep ;
-    ex:actionName "Mix" ;
-    ex:targetIngredient ex:Oeufs, ex:Lait, ex:Huile ;
-    ex:toolUsed ex:Fouet ;
-    ex:additionalContext "Add lait and huile progressively until the batter is fluid" .
+:Step3 a :Step ;
+    :order 3 ;
+    :utensils [:label "28cm frying pan"] ;
+    :inputs (
+        :FoodItem_CookedPasta
+        :FoodItem_CottageCheese
+        :FoodItem_ParmesanGrated
+        :FoodItem_LemonJuice
+    ) ;
+    :outputs [:label "Final pasta dish"] ;
+    :Action [:label "Combine and season pasta with cottage cheese, Parmesan, and lemon juice. Garnish with salmon slices."] .
 
-ex:Step5 a ex:RecipeStep ;
-    ex:actionName "Let rest" ;
-    ex:targetIngredient ex:Pate ;
-    ex:additionalContext "For about 1 hour" .
+### Ingredients ###
+:Ingredient_LasagneSheets a :Ingredient ;
+    :food_item :FoodItem_LasagneStrips ;
+    :amount [:value "125" ; :Unit [:label "grams"]] .
 
-ex:Step6 a ex:RecipeStep ;
-    ex:actionName "Pour" ;
-    ex:targetIngredient ex:Pate ;
-    ex:toolUsed ex:Louche, ex:Poele ;
-    ex:additionalContext "Poêle should be well heated" .
+:Ingredient_SpringOnions a :Ingredient ;
+    :food_item :FoodItem_SpringOnions ;
+    :amount [:value "2" ; :Unit [:label "pieces"]] .
 
-ex:Step7 a ex:RecipeStep ;
-    ex:actionName "Spread" ;
-    ex:targetIngredient ex:Pate ;
-    ex:toolUsed ex:Poele ;
-    ex:additionalContext "Reverse the surplus of pâte" .
+:Ingredient_Spinach a :Ingredient ;
+    :food_item :FoodItem_Spinach ;
+    :amount [:value "80" ; :Unit [:label "grams"]] .
 
-ex:Step8 a ex:RecipeStep ;
-    ex:actionName "Cook" ;
-    ex:targetIngredient ex:Crepe ;
-    ex:toolUsed ex:Poele ;
-    ex:additionalContext "Each side for 1 minute" .
+:Ingredient_SmokedSalmon a :Ingredient ;
+    :food_item :FoodItem_SmokedSalmon ;
+    :amount [:value "60" ; :Unit [:label "grams"]] .
 
-ex:Step9 a ex:RecipeStep ;
-    ex:actionName "Eat" ;
-    ex:targetIngredient ex:Crepe ;
-    ex:additionalContext "While hot" .
+:Ingredient_Lemon a :Ingredient ;
+    :food_item :FoodItem_Lemon ;
+    :amount [:value "0.5" ; :Unit [:label "pieces"]] .
+
+:Ingredient_Parmesan a :Ingredient ;
+    :food_item :FoodItem_ParmesanGrated ;
+    :amount [:value "5" ; :Unit [:label "grams"]] .
+
+:Ingredient_CottageCheese a :Ingredient ;
+    :food_item :FoodItem_CottageCheese ;
+    :amount [:value "1" ; :Unit [:label "tablespoon"]] .
+
+### Food Items ###
+:FoodItem_LasagneStrips a :FoodItem ;
+    :label "Fresh lasagne sheets" ;
+    :state "Cut into 2cm strips" .
+
+:FoodItem_SpringOnions a :FoodItem ;
+    :label "Spring onions" ;
+    :state "Trimmed and finely chopped" .
+
+:FoodItem_Spinach a :FoodItem ;
+    :label "Spinach" ;
+    :state "Chopped" .
+
+:FoodItem_SmokedSalmon a :FoodItem ;
+    :label "Smoked salmon" ;
+    :state "Finely chopped and sliced for garnish" .
+
+:FoodItem_LemonZest a :FoodItem ;
+    :label "Lemon zest" ;
+    :state "Finely grated" .
+
+:FoodItem_ParmesanGrated a :FoodItem ;
+    :label "Parmesan cheese" ;
+    :state "Finely grated" .
+
+:FoodItem_CottageCheese a :FoodItem ;
+    :label "Cottage cheese" ;
+    :state "Ready-to-use" .
+
+:FoodItem_BoilingWater a :FoodItem ;
+    :label "Boiling water" ;
+    :state "Hot" .
+
+:FoodItem_LemonJuice a :FoodItem ;
+    :label "Lemon juice" ;
+    :state "Freshly squeezed" .
