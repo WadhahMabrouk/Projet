@@ -37,7 +37,6 @@ if __name__ == "__main__":
    
     results = run_sparql_query(query)
     if results:
-        # Prepare data for the DataFrame
         data = []
         for result in results["results"]["bindings"]:
             stepNumber = result.get('stepNumber', {}).get('value', 'N/A')

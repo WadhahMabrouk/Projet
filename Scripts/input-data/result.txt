@@ -297,4 +297,563 @@ ex:Unit_Pinches a ex:Unit ;
 
 ex:Unit_Spoons a ex:Unit ;
     ex:label "spoons" .
+``````turtle
+@prefix : <http://example.org/recipe#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:CrepesRecipe a :Recipe ;
+    rdfs:label "Recette des crêpes" ;
+    :description "Ingrédients pour une douzaine de crêpes : 2 œufs, 250 g de farine, ½ litre de lait, une pincée de sel, une cuillère à soupe d'huile. Ustensiles : un saladier, un fouet, une louche, une poêle à crêpes, un plat. Préparation : 1) Verser la farine dans le saladier. 2) Ajouter le sel et former un puit. 3) Ajouter au centre les œufs. 4) Mélanger en ajoutant progressivment le lait et l'huile jusqu'à l'obtention d'une pâte fluide. 5) Laisser reposer la pâte environ 1 heure. 6) Verser une louche de pâte dans la poêle bien chaude. 7) Étaler la pâte et reverser le surplus de pâte. 8) Cuire chaque face de la crêpe pendant une minute. 9) Manger chaud. Pour parfumer votre pâte à crêpes, vous pouvez ajouter du sucre vanillé, de la cannelle ou de l'eau de fleur d'oranger." ;
+    :steps ( :Step1 :Step2 :Step3 :Step4 :Step5 :Step6 :Step7 :Step8 :Step9 ) ;
+    :ingredients ( :Ingredient1 :Ingredient2 :Ingredient3 :Ingredient4 :Ingredient5 ) ;
+    :categories ( "Breakfast" "Dessert" ) .
+
+# Ingredients
+:Ingredient1 a :Ingredient ;
+    :food_item :Eggs ;
+    :amount [ a :Quantity ;
+              :value 2 ] .
+
+:Ingredient2 a :Ingredient ;
+    :food_item :Flour ;
+    :amount [ a :Quantity ;
+              :value 250 ;
+              :unit :Gram ] .
+
+:Ingredient3 a :Ingredient ;
+    :food_item :Milk ;
+    :amount [ a :Quantity ;
+              :value 0.5 ;
+              :unit :Litre ] .
+
+:Ingredient4 a :Ingredient ;
+    :food_item :Salt ;
+    :amount [ a :Quantity ;
+              :value "une pincée" ] .
+
+:Ingredient5 a :Ingredient ;
+    :food_item :Oil ;
+    :amount [ a :Quantity ;
+              :value 1 ;
+              :unit :CuillereASoupe ] .
+
+# Utensils
+:Saladier a :Utensil ;
+    rdfs:label "un saladier" .
+
+:Fouet a :Utensil ;
+    rdfs:label "un fouet" .
+
+:Louche a :Utensil ;
+    rdfs:label "une louche" .
+
+:Poele a :Utensil ;
+    rdfs:label "une poêle à crêpes" .
+
+:Plat a :Utensil ;
+    rdfs:label "un plat" .
+
+# Food Items
+:Eggs a :FoodItem ;
+    :state "raw" .
+
+:Flour a :FoodItem ;
+    :state "dry" .
+
+:Milk a :FoodItem ;
+    :state "liquid" .
+
+:Salt a :FoodItem ;
+    :state "dry" .
+
+:Oil a :FoodItem ;
+    :state "liquid" .
+
+:Batter a :FoodItem ;
+    :state "mixed" .
+
+:Crepe a :FoodItem ;
+    :state "cooked" .
+
+# Actions
+:Pour a :Action ;
+    rdfs:label "Verser" .
+
+:Add a :Action ;
+    rdfs:label "Ajouter" .
+
+:Mix a :Action ;
+    rdfs:label "Mélanger" .
+
+:Rest a :Action ;
+    rdfs:label "Laisser reposer" .
+
+:Spread a :Action ;
+    rdfs:label "Étaler" .
+
+:Cook a :Action ;
+    rdfs:label "Cuire" .
+
+:Eat a :Action ;
+    rdfs:label "Manger" .
+
+# Units
+:Gram a :Unit ;
+    rdfs:label "gram" .
+
+:Litre a :Unit ;
+    rdfs:label "litre" .
+
+:CuillereASoupe a :Unit ;
+    rdfs:label "cuillère à soupe" .
+
+# Steps
+:Step1 a :Step ;
+    :order 1 ;
+    :utensils :Saladier ;
+    :inputs :Flour ;
+    :outputs :Batter ;
+    :Action :Pour .
+
+:Step2 a :Step ;
+    :order 2 ;
+    :utensils :Saladier ;
+    :inputs :Salt ;
+    :outputs :Batter ;
+    :Action :Add .
+
+:Step3 a :Step ;
+    :order 3 ;
+    :utensils :Saladier ;
+    :inputs :Eggs ;
+    :outputs :Batter ;
+    :Action :Add .
+
+:Step4 a :Step ;
+    :order 4 ;
+    :utensils :Saladier, :Fouet ;
+    :inputs :Milk, :Oil ;
+    :outputs :Batter ;
+    :Action :Mix .
+
+:Step5 a :Step ;
+    :order 5 ;
+    :utensils :Saladier ;
+    :inputs :Batter ;
+    :outputs :Batter ;
+    :Action :Rest .
+
+:Step6 a :Step ;
+    :order 6 ;
+    :utensils :Poele, :Louche ;
+    :inputs :Batter ;
+    :outputs :Crepe ;
+    :Action :Pour .
+
+:Step7 a :Step ;
+    :order 7 ;
+    :utensils :Poele ;
+    :inputs :Batter ;
+    :outputs :Crepe ;
+    :Action :Spread .
+
+:Step8 a :Step ;
+    :order 8 ;
+    :utensils :Poele ;
+    :inputs :Crepe ;
+    :outputs :Crepe ;
+    :Action :Cook .
+
+:Step9 a :Step ;
+    :order 9 ;
+    :utensils :Plat ;
+    :inputs :Crepe ;
+    :outputs :Crepe ;
+    :Action :Eat .
+```
+
+This RDF-star graph models the recipe for crêpes, including the ingredients, utensils, steps, food items, actions, and units. Each step is linked to the relevant utensils, inputs, outputs, and actions, providing a comprehensive representation of the recipe.```turtle
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <http://example.org/recipe#> .
+
+ex:CrepesRecipe a ex:Recipe ;
+    ex:label "Recette des crêpes" ;
+    ex:description "Ingrédients pour une douzaine de crêpes : 2 œufs, 250 g de farine, ½ litre de lait, une pincée de sel, une cuillère à soupe d'huile" ;
+    ex:steps (
+        ex:Step1
+        ex:Step2
+        ex:Step3
+        ex:Step4
+        ex:Step5
+        ex:Step6
+        ex:Step7
+        ex:Step8
+        ex:Step9
+    ) ;
+    ex:ingredients (
+        ex:IngredientEggs
+        ex:IngredientFlour
+        ex:IngredientMilk
+        ex:IngredientSalt
+        ex:IngredientOil
+    ) ;
+    ex:categories ("Breakfast", "Dessert") .
+
+ex:Step1 a ex:Step ;
+    ex:order 1 ;
+    ex:utensils (ex:UtensilBowl) ;
+    ex:inputs (ex:FoodItemFlour) ;
+    ex:Action ex:ActionPour .
+
+ex:Step2 a ex:Step ;
+    ex:order 2 ;
+    ex:utensils (ex:UtensilBowl) ;
+    ex:inputs (ex:FoodItemSalt) ;
+    ex:Action ex:ActionAdd .
+
+ex:Step3 a ex:Step ;
+    ex:order 3 ;
+    ex:utensils (ex:UtensilBowl) ;
+    ex:inputs (ex:FoodItemEggs) ;
+    ex:Action ex:ActionAdd .
+
+ex:Step4 a ex:Step ;
+    ex:order 4 ;
+    ex:utensils (ex:UtensilWhisk) ;
+    ex:inputs (ex:FoodItemMilk, ex:FoodItemOil) ;
+    ex:outputs (ex:FoodItemBatter) ;
+    ex:Action ex:ActionMix .
+
+ex:Step5 a ex:Step ;
+    ex:order 5 ;
+    ex:inputs (ex:FoodItemBatter) ;
+    ex:Action ex:ActionRest .
+
+ex:Step6 a ex:Step ;
+    ex:order 6 ;
+    ex:utensils (ex:UtensilLadle, ex:UtensilPan) ;
+    ex:inputs (ex:FoodItemBatter) ;
+    ex:Action ex:ActionPour .
+
+ex:Step7 a ex:Step ;
+    ex:order 7 ;
+    ex:utensils (ex:UtensilPan) ;
+    ex:inputs (ex:FoodItemBatter) ;
+    ex:Action ex:ActionSpread .
+
+ex:Step8 a ex:Step ;
+    ex:order 8 ;
+    ex:utensils (ex:UtensilPan) ;
+    ex:inputs (ex:FoodItemBatter) ;
+    ex:outputs (ex:FoodItemCrepe) ;
+    ex:Action ex:ActionCook .
+
+ex:Step9 a ex:Step ;
+    ex:order 9 ;
+    ex:inputs (ex:FoodItemCrepe) ;
+    ex:Action ex:ActionServe .
+
+ex:IngredientEggs a ex:Ingredient ;
+    ex:food_item ex:FoodItemEggs ;
+    ex:amount (ex:QuantityEggs) .
+
+ex:IngredientFlour a ex:Ingredient ;
+    ex:food_item ex:FoodItemFlour ;
+    ex:amount (ex:QuantityFlour) .
+
+ex:IngredientMilk a ex:Ingredient ;
+    ex:food_item ex:FoodItemMilk ;
+    ex:amount (ex:QuantityMilk) .
+
+ex:IngredientSalt a ex:Ingredient ;
+    ex:food_item ex:FoodItemSalt ;
+    ex:amount (ex:QuantitySalt) .
+
+ex:IngredientOil a ex:Ingredient ;
+    ex:food_item ex:FoodItemOil ;
+    ex:amount (ex:QuantityOil) .
+
+ex:UtensilBowl a ex:Utensil ;
+    ex:label "un saladier" .
+
+ex:UtensilWhisk a ex:Utensil ;
+    ex:label "un fouet" .
+
+ex:UtensilLadle a ex:Utensil ;
+    ex:label "une louche" .
+
+ex:UtensilPan a ex:Utensil ;
+    ex:label "une poêle à crêpes" .
+
+ex:UtensilPlate a ex:Utensil ;
+    ex:label "un plat" .
+
+ex:FoodItemEggs a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:FoodItemFlour a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:FoodItemMilk a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:FoodItemSalt a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:FoodItemOil a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:FoodItemBatter a ex:FoodItem ;
+    ex:state "mixed" .
+
+ex:FoodItemCrepe a ex:FoodItem ;
+    ex:state "cooked" .
+
+ex:ActionPour a ex:Action ;
+    ex:label "Verser" .
+
+ex:ActionAdd a ex:Action ;
+    ex:label "Ajouter" .
+
+ex:ActionMix a ex:Action ;
+    ex:label "Mélanger" .
+
+ex:ActionRest a ex:Action ;
+    ex:label "Laisser reposer" .
+
+ex:ActionSpread a ex:Action ;
+    ex:label "Étaler" .
+
+ex:ActionCook a ex:Action ;
+    ex:label "Cuire" .
+
+ex:ActionServe a ex:Action ;
+    ex:label "Manger" .
+
+ex:QuantityEggs a ex:Quantity ;
+    ex:value 2 .
+
+ex:QuantityFlour a ex:Quantity ;
+    ex:value 250 ;
+    ex:unit ex:UnitGram .
+
+ex:QuantityMilk a ex:Quantity ;
+    ex:value 500 ;
+    ex:unit ex:UnitMilliliter .
+
+ex:QuantitySalt a ex:Quantity ;
+    ex:value "une pincée" .
+
+ex:QuantityOil a ex:Quantity ;
+    ex:value 1 ;
+    ex:unit ex:UnitSpoon .
+
+ex:UnitGram a ex:Unit ;
+    ex:label "gram" .
+
+ex:UnitMilliliter a ex:Unit ;
+    ex:label "milliliter" .
+
+ex:UnitSpoon a ex:Unit ;
+    ex:label "cuillère à soupe" .
+``````turtle
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.org/recipe#> .
+
+ex:RecetteDesCrepes a ex:Recipe ;
+    rdfs:label "Recette des crêpes" ;
+    ex:description "Recette pour une douzaine de crêpes." ;
+    ex:steps (
+        ex:Step1
+        ex:Step2
+        ex:Step3
+        ex:Step4
+        ex:Step5
+        ex:Step6
+        ex:Step7
+        ex:Step8
+        ex:Step9
+    ) ;
+    ex:ingredients (
+        ex:Ingredient1
+        ex:Ingredient2
+        ex:Ingredient3
+        ex:Ingredient4
+        ex:Ingredient5
+    ) ;
+    ex:categories ("Dessert", "French") .
+
+ex:Step1 a ex:Step ;
+    ex:order 1 ;
+    ex:utensils (ex:Saladier) ;
+    ex:inputs (ex:Farine) ;
+    ex:action ex:VerseAction .
+
+ex:Step2 a ex:Step ;
+    ex:order 2 ;
+    ex:utensils (ex:Saladier) ;
+    ex:inputs (ex:Sel) ;
+    ex:action ex:AddAction .
+
+ex:Step3 a ex:Step ;
+    ex:order 3 ;
+    ex:utensils (ex:Saladier) ;
+    ex:inputs (ex:Oeufs) ;
+    ex:action ex:AddAction .
+
+ex:Step4 a ex:Step ;
+    ex:order 4 ;
+    ex:utensils (ex:Fouet) ;
+    ex:inputs (ex:Lait, ex:Huile) ;
+    ex:outputs (ex:PateFluide) ;
+    ex:action ex:MixAction .
+
+ex:Step5 a ex:Step ;
+    ex:order 5 ;
+    ex:inputs (ex:PateFluide) ;
+    ex:action ex:RestAction .
+
+ex:Step6 a ex:Step ;
+    ex:order 6 ;
+    ex:utensils (ex:Louche, ex:PoeleACrepes) ;
+    ex:inputs (ex:PateFluide) ;
+    ex:action ex:PourAction .
+
+ex:Step7 a ex:Step ;
+    ex:order 7 ;
+    ex:utensils (ex:PoeleACrepes) ;
+    ex:inputs (ex:PateFluide) ;
+    ex:action ex:SpreadAction .
+
+ex:Step8 a ex:Step ;
+    ex:order 8 ;
+    ex:utensils (ex:PoeleACrepes) ;
+    ex:inputs (ex:PateFluide) ;
+    ex:outputs (ex:Crepe) ;
+    ex:action ex:CookAction .
+
+ex:Step9 a ex:Step ;
+    ex:order 9 ;
+    ex:outputs (ex:Crepe) ;
+    ex:action ex:EatAction .
+
+ex:Ingredient1 a ex:Ingredient ;
+    ex:food_item ex:Oeufs ;
+    ex:amount (ex:Quantity1) .
+
+ex:Ingredient2 a ex:Ingredient ;
+    ex:food_item ex:Farine ;
+    ex:amount (ex:Quantity2) .
+
+ex:Ingredient3 a ex:Ingredient ;
+    ex:food_item ex:Lait ;
+    ex:amount (ex:Quantity3) .
+
+ex:Ingredient4 a ex:Ingredient ;
+    ex:food_item ex:Sel ;
+    ex:amount (ex:Quantity4) .
+
+ex:Ingredient5 a ex:Ingredient ;
+    ex:food_item ex:Huile ;
+    ex:amount (ex:Quantity5) .
+
+ex:Oeufs a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:Farine a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:Lait a ex:FoodItem ;
+    ex:state "liquid" .
+
+ex:Sel a ex:FoodItem ;
+    ex:state "raw" .
+
+ex:Huile a ex:FoodItem ;
+    ex:state "liquid" .
+
+ex:PateFluide a ex:FoodItem ;
+    ex:state "mixed" .
+
+ex:Crepe a ex:FoodItem ;
+    ex:state "cooked" .
+
+ex:Saladier a ex:Utensil ;
+    rdfs:label "saladier" .
+
+ex:Fouet a ex:Utensil ;
+    rdfs:label "fouet" .
+
+ex:Louche a ex:Utensil ;
+    rdfs:label "louche" .
+
+ex:PoeleACrepes a ex:Utensil ;
+    rdfs:label "poêle à crêpes" .
+
+ex:Plat a ex:Utensil ;
+    rdfs:label "plat" .
+
+ex:VerseAction a ex:Action ;
+    rdfs:label "verser" .
+
+ex:AddAction a ex:Action ;
+    rdfs:label "ajouter" .
+
+ex:MixAction a ex:Action ;
+    rdfs:label "mélanger" .
+
+ex:RestAction a ex:Action ;
+    rdfs:label "laisser reposer" .
+
+ex:PourAction a ex:Action ;
+    rdfs:label "verser" .
+
+ex:SpreadAction a ex:Action ;
+    rdfs:label "étaler" .
+
+ex:CookAction a ex:Action ;
+    rdfs:label "cuire" .
+
+ex:EatAction a ex:Action ;
+    rdfs:label "manger" .
+
+ex:Quantity1 a ex:Quantity ;
+    ex:value "2"^^xsd:int ;
+    ex:unit ex:Unit1 .
+
+ex:Quantity2 a ex:Quantity ;
+    ex:value "250"^^xsd:int ;
+    ex:unit ex:Unit2 .
+
+ex:Quantity3 a ex:Quantity ;
+    ex:value "0.5"^^xsd:float ;
+    ex:unit ex:Unit3 .
+
+ex:Quantity4 a ex:Quantity ;
+    ex:value "1"^^xsd:int ;
+    ex:unit ex:Unit4 .
+
+ex:Quantity5 a ex:Quantity ;
+    ex:value "1"^^xsd:int ;
+    ex:unit ex:Unit5 .
+
+ex:Unit1 a ex:Unit ;
+    rdfs:label "unit" .
+
+ex:Unit2 a ex:Unit ;
+    rdfs:label "grams" .
+
+ex:Unit3 a ex:Unit ;
+    rdfs:label "liters" .
+
+ex:Unit4 a ex:Unit ;
+    rdfs:label "pinch" .
+
+ex:Unit5 a ex:Unit ;
+    rdfs:label "spoonful" .
 ```

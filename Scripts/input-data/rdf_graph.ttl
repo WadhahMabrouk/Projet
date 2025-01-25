@@ -1,126 +1,117 @@
-@prefix : <http://example.org/recipes#> .
+@prefix : <http://example.org/crepes#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
 
-:SmokedSalmonPasta a :Recipe ;
-    :label "Smoked Salmon Pasta" ;
-    :description "A quick and delicious pasta dish with smoked salmon, spinach, spring onions, and a zesty lemon-Parmesan sauce. Perfect for a single serving." ;
-    :steps (
-        :Step1
-        :Step2
-        :Step3
-    ) ;
-    :ingredients (
-        :Ingredient_LasagneSheets
-        :Ingredient_SpringOnions
-        :Ingredient_Spinach
-        :Ingredient_SmokedSalmon
-        :Ingredient_Lemon
-        :Ingredient_Parmesan
-        :Ingredient_CottageCheese
-    ) ;
-    :categories ["Pasta", "Quick Meals", "Seafood"] .
+:Crepes rdf:type :Recipe ;
+    schema:name "Crêpes" ;
+    schema:servings "12 crêpes" ;
+    schema:prepTime "1 hour" ;
+    schema:totalTime "1 hour and 10 minutes" ;
+    :hasInstruction :Step1, :Step2, :Step3, :Step4, :Step5, :Step6, :Step7, :Step8, :Step9 ;
+    :requiresIngredient :Flour, :Eggs, :Milk, :Salt, :Oil ;
+    :usesEquipment :MixingBowl, :Whisk, :Ladle, :CrepePan, :Plate .
 
-### Steps ###
-:Step1 a :Step ;
-    :order 1 ;
-    :utensils [:label "28cm frying pan"] ;
-    :inputs (
-        :FoodItem_SpringOnions
-        :FoodItem_Spinach
-        :FoodItem_SmokedSalmon
-        :FoodItem_LemonZest
-        :FoodItem_ParmesanGrated
-        :FoodItem_LasagneStrips
-    ) ;
-    :outputs [:label "Sautéed vegetable and salmon mixture"] ;
-    :Action [:label "Sauté ingredients on high heat in a frying pan with olive oil until fragrant"] .
+# Ingredients
+:Flour rdf:type :Ingredient ;
+    schema:name "Flour" ;
+    schema:quantity "250g" .
 
-:Step2 a :Step ;
-    :order 2 ;
-    :utensils [:label "28cm frying pan"] ;
-    :inputs (
-        :FoodItem_SauteedMixture
-        :FoodItem_LasagneStrips
-        :FoodItem_BoilingWater
-    ) ;
-    :outputs [:label "Cooked pasta with a light sauce"] ;
-    :Action [:label "Add boiling water to cover pasta; cook for 4 minutes until water is absorbed and a light sauce forms"] .
+:Eggs rdf:type :Ingredient ;
+    schema:name "Eggs" ;
+    schema:quantity "2" .
 
-:Step3 a :Step ;
-    :order 3 ;
-    :utensils [:label "28cm frying pan"] ;
-    :inputs (
-        :FoodItem_CookedPasta
-        :FoodItem_CottageCheese
-        :FoodItem_ParmesanGrated
-        :FoodItem_LemonJuice
-    ) ;
-    :outputs [:label "Final pasta dish"] ;
-    :Action [:label "Combine and season pasta with cottage cheese, Parmesan, and lemon juice. Garnish with salmon slices."] .
+:Milk rdf:type :Ingredient ;
+    schema:name "Milk" ;
+    schema:quantity "1/2 liter" .
 
-### Ingredients ###
-:Ingredient_LasagneSheets a :Ingredient ;
-    :food_item :FoodItem_LasagneStrips ;
-    :amount [:value "125" ; :Unit [:label "grams"]] .
+:Salt rdf:type :Ingredient ;
+    schema:name "Salt" ;
+    schema:quantity "A pinch" .
 
-:Ingredient_SpringOnions a :Ingredient ;
-    :food_item :FoodItem_SpringOnions ;
-    :amount [:value "2" ; :Unit [:label "pieces"]] .
+:Oil rdf:type :Ingredient ;
+    schema:name "Oil" ;
+    schema:quantity "1 tablespoon" .
 
-:Ingredient_Spinach a :Ingredient ;
-    :food_item :FoodItem_Spinach ;
-    :amount [:value "80" ; :Unit [:label "grams"]] .
+# Utensils
+:MixingBowl rdf:type :Equipment ;
+    schema:name "Mixing Bowl" ;
+    schema:purpose "Holding ingredients for mixing" .
 
-:Ingredient_SmokedSalmon a :Ingredient ;
-    :food_item :FoodItem_SmokedSalmon ;
-    :amount [:value "60" ; :Unit [:label "grams"]] .
+:Whisk rdf:type :Equipment ;
+    schema:name "Whisk" ;
+    schema:purpose "Mixing ingredients into a smooth batter" .
 
-:Ingredient_Lemon a :Ingredient ;
-    :food_item :FoodItem_Lemon ;
-    :amount [:value "0.5" ; :Unit [:label "pieces"]] .
+:Ladle rdf:type :Equipment ;
+    schema:name "Ladle" ;
+    schema:purpose "Pouring batter into the pan" .
 
-:Ingredient_Parmesan a :Ingredient ;
-    :food_item :FoodItem_ParmesanGrated ;
-    :amount [:value "5" ; :Unit [:label "grams"]] .
+:CrepePan rdf:type :Equipment ;
+    schema:name "Crêpe Pan" ;
+    schema:purpose "Cooking crêpes" .
 
-:Ingredient_CottageCheese a :Ingredient ;
-    :food_item :FoodItem_CottageCheese ;
-    :amount [:value "1" ; :Unit [:label "tablespoon"]] .
+:Plate rdf:type :Equipment ;
+    schema:name "Plate" ;
+    schema:purpose "Plating crêpes after cooking" .
 
-### Food Items ###
-:FoodItem_LasagneStrips a :FoodItem ;
-    :label "Fresh lasagne sheets" ;
-    :state "Cut into 2cm strips" .
+# Steps
+:Step1 rdf:type :Instruction ;
+    schema:stepNumber 1 ;
+    schema:duration "2 minutes" ;
+    schema:text "Pour the flour into the mixing bowl." ;
+    :resultantState "Flour is ready in the mixing bowl." ;
+    :usesUtensil :MixingBowl .
 
-:FoodItem_SpringOnions a :FoodItem ;
-    :label "Spring onions" ;
-    :state "Trimmed and finely chopped" .
+:Step2 rdf:type :Instruction ;
+    schema:stepNumber 2 ;
+    schema:duration "1 minute" ;
+    schema:text "Add the salt and create a well in the center." ;
+    :resultantState "Well formed in the flour with salt." ;
+    :usesUtensil :MixingBowl .
 
-:FoodItem_Spinach a :FoodItem ;
-    :label "Spinach" ;
-    :state "Chopped" .
+:Step3 rdf:type :Instruction ;
+    schema:stepNumber 3 ;
+    schema:duration "1 minute" ;
+    schema:text "Add the eggs into the well." ;
+    :resultantState "Eggs placed in the center of the flour." ;
+    :usesUtensil :MixingBowl .
 
-:FoodItem_SmokedSalmon a :FoodItem ;
-    :label "Smoked salmon" ;
-    :state "Finely chopped and sliced for garnish" .
+:Step4 rdf:type :Instruction ;
+    schema:stepNumber 4 ;
+    schema:duration "5 minutes" ;
+    schema:text "Gradually mix while adding milk and oil until smooth batter is formed." ;
+    :resultantState "Smooth and fluid batter achieved." ;
+    :usesUtensil :MixingBowl, :Whisk .
 
-:FoodItem_LemonZest a :FoodItem ;
-    :label "Lemon zest" ;
-    :state "Finely grated" .
+:Step5 rdf:type :Instruction ;
+    schema:stepNumber 5 ;
+    schema:duration "1 hour" ;
+    schema:text "Let the batter rest for 1 hour." ;
+    :resultantState "Batter rested and ready for cooking." .
 
-:FoodItem_ParmesanGrated a :FoodItem ;
-    :label "Parmesan cheese" ;
-    :state "Finely grated" .
+:Step6 rdf:type :Instruction ;
+    schema:stepNumber 6 ;
+    schema:duration "1 minute" ;
+    schema:text "Pour a ladle of batter into a hot crêpe pan." ;
+    :resultantState "Batter spread evenly in the crêpe pan." ;
+    :usesUtensil :Ladle, :CrepePan .
 
-:FoodItem_CottageCheese a :FoodItem ;
-    :label "Cottage cheese" ;
-    :state "Ready-to-use" .
+:Step7 rdf:type :Instruction ;
+    schema:stepNumber 7 ;
+    schema:duration "30 seconds" ;
+    schema:text "Spread the batter evenly and remove excess." ;
+    :resultantState "Thin batter layer in the crêpe pan." ;
+    :usesUtensil :CrepePan .
 
-:FoodItem_BoilingWater a :FoodItem ;
-    :label "Boiling water" ;
-    :state "Hot" .
+:Step8 rdf:type :Instruction ;
+    schema:stepNumber 8 ;
+    schema:duration "1 minute per side" ;
+    schema:text "Cook each side of the crêpe for 1 minute." ;
+    :resultantState "Golden-brown crêpes cooked on both sides." ;
+    :usesUtensil :CrepePan .
 
-:FoodItem_LemonJuice a :FoodItem ;
-    :label "Lemon juice" ;
-    :state "Freshly squeezed" .
+:Step9 rdf:type :Instruction ;
+    schema:stepNumber 9 ;
+    schema:duration "0 minutes" ;
+    schema:text "Serve and eat warm." ;
+    :resultantState "Crêpes served and ready to eat." ;
+    :usesUtensil :Plate .
