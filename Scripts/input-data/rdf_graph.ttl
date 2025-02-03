@@ -1,117 +1,257 @@
-@prefix : <http://example.org/crepes#> .
+@prefix : <http://example.org/recipe#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-:Crepes rdf:type :Recipe ;
-    schema:name "Crêpes" ;
-    schema:servings "12 crêpes" ;
-    schema:prepTime "1 hour" ;
-    schema:totalTime "1 hour and 10 minutes" ;
-    :hasInstruction :Step1, :Step2, :Step3, :Step4, :Step5, :Step6, :Step7, :Step8, :Step9 ;
-    :requiresIngredient :Flour, :Eggs, :Milk, :Salt, :Oil ;
-    :usesEquipment :MixingBowl, :Whisk, :Ladle, :CrepePan, :Plate .
+:SmokedSalmonPasta rdf:type :Recipe ;
+    rdfs:label "Smoked Salmon Pasta" ;
+    rdfs:comment "Spinach, spring onion, lemon, curds & Parmesan" ;
+    :categories "Pasta" ;
+    :ingredients (:LasagneSheets :SpringOnion :Spinach :SmokedSalmon :Lemon :Parmesan :CottageCheese :OliveOil :BoilingWater) ;
+    :steps (:Step1 :Step2 :Step3 :Step4 :Step5) .
 
-# Ingredients
-:Flour rdf:type :Ingredient ;
-    schema:name "Flour" ;
-    schema:quantity "250g" .
+:Step1 rdf:type :Step ;
+    :order 1 ;
+    :utensils (:Kettle :Knife) ;
+    :inputs (:LasagneSheets) ;
+    :outputs (:CutLasagneSheets) ;
+    :Action "Cut" .
 
-:Eggs rdf:type :Ingredient ;
-    schema:name "Eggs" ;
-    schema:quantity "2" .
+:Step2 rdf:type :Step ;
+    :order 2 ;
+    :utensils (:Knife) ;
+    :inputs (:SpringOnion :Spinach :SmokedSalmonHalf :Lemon :Parmesan) ;
+    :outputs (:ChoppedSpringOnion :ChoppedSpinach :ChoppedSalmon :LemonZest :GratedParmesan) ;
+    :Action "Chop and Grate" .
 
-:Milk rdf:type :Ingredient ;
-    schema:name "Milk" ;
-    schema:quantity "1/2 liter" .
+:Step3 rdf:type :Step ;
+    :order 3 ;
+    :utensils (:FryingPan) ;
+    :inputs (:OliveOil :ChoppedSpringOnion :ChoppedSpinach :ChoppedSalmon :LemonZest :CutLasagneSheets :BoilingWater) ;
+    :outputs (:CookedPastaSauce) ;
+    :Action "Cook" .
 
-:Salt rdf:type :Ingredient ;
-    schema:name "Salt" ;
-    schema:quantity "A pinch" .
+:Step4 rdf:type :Step ;
+    :order 4 ;
+    :inputs (:CookedPastaSauce :LemonJuice :CottageCheese :GratedParmesan) ;
+    :outputs (:SeasonedPasta) ;
+    :Action "Mix and Season" .
 
-:Oil rdf:type :Ingredient ;
-    schema:name "Oil" ;
-    schema:quantity "1 tablespoon" .
+:Step5 rdf:type :Step ;
+    :order 5 ;
+    :inputs (:SeasonedPasta :RemainingSalmon :OliveOil) ;
+    :outputs (:FinalDish) ;
+    :Action "Finish and Serve" .
 
-# Utensils
-:MixingBowl rdf:type :Equipment ;
-    schema:name "Mixing Bowl" ;
-    schema:purpose "Holding ingredients for mixing" .
+:LasagneSheets rdf:type :FoodItem ;
+    :state "Fresh" .
 
-:Whisk rdf:type :Equipment ;
-    schema:name "Whisk" ;
-    schema:purpose "Mixing ingredients into a smooth batter" .
+:SpringOnion rdf:type :FoodItem ;
+    :state "Whole" .
 
-:Ladle rdf:type :Equipment ;
-    schema:name "Ladle" ;
-    schema:purpose "Pouring batter into the pan" .
+:Spinach rdf:type :FoodItem ;
+    :state "Fresh" .
 
-:CrepePan rdf:type :Equipment ;
-    schema:name "Crêpe Pan" ;
-    schema:purpose "Cooking crêpes" .
+:SmokedSalmon rdf:type :FoodItem ;
+    :state "Sliced" .
 
-:Plate rdf:type :Equipment ;
-    schema:name "Plate" ;
-    schema:purpose "Plating crêpes after cooking" .
+:Lemon rdf:type :FoodItem ;
+    :state "Whole" .
 
-# Steps
-:Step1 rdf:type :Instruction ;
-    schema:stepNumber 1 ;
-    schema:duration "2 minutes" ;
-    schema:text "Pour the flour into the mixing bowl." ;
-    :resultantState "Flour is ready in the mixing bowl." ;
-    :usesUtensil :MixingBowl .
+:Parmesan rdf:type :FoodItem ;
+    :state "Whole" .
 
-:Step2 rdf:type :Instruction ;
-    schema:stepNumber 2 ;
-    schema:duration "1 minute" ;
-    schema:text "Add the salt and create a well in the center." ;
-    :resultantState "Well formed in the flour with salt." ;
-    :usesUtensil :MixingBowl .
+:CottageCheese rdf:type :FoodItem ;
+    :state "Soft" .
 
-:Step3 rdf:type :Instruction ;
-    schema:stepNumber 3 ;
-    schema:duration "1 minute" ;
-    schema:text "Add the eggs into the well." ;
-    :resultantState "Eggs placed in the center of the flour." ;
-    :usesUtensil :MixingBowl .
+:OliveOil rdf:type :FoodItem ;
+    :state "Liquid" .
 
-:Step4 rdf:type :Instruction ;
-    schema:stepNumber 4 ;
-    schema:duration "5 minutes" ;
-    schema:text "Gradually mix while adding milk and oil until smooth batter is formed." ;
-    :resultantState "Smooth and fluid batter achieved." ;
-    :usesUtensil :MixingBowl, :Whisk .
+:BoilingWater rdf:type :FoodItem ;
+    :state "Hot" .
 
-:Step5 rdf:type :Instruction ;
-    schema:stepNumber 5 ;
-    schema:duration "1 hour" ;
-    schema:text "Let the batter rest for 1 hour." ;
-    :resultantState "Batter rested and ready for cooking." .
+:LemonZest rdf:type :FoodItem ;
+    :state "Grated" .
 
-:Step6 rdf:type :Instruction ;
-    schema:stepNumber 6 ;
-    schema:duration "1 minute" ;
-    schema:text "Pour a ladle of batter into a hot crêpe pan." ;
-    :resultantState "Batter spread evenly in the crêpe pan." ;
-    :usesUtensil :Ladle, :CrepePan .
+:GratedParmesan rdf:type :FoodItem ;
+    :state "Grated" .
 
-:Step7 rdf:type :Instruction ;
-    schema:stepNumber 7 ;
-    schema:duration "30 seconds" ;
-    schema:text "Spread the batter evenly and remove excess." ;
-    :resultantState "Thin batter layer in the crêpe pan." ;
-    :usesUtensil :CrepePan .
+:CutLasagneSheets rdf:type :FoodItem ;
+    :state "Strips" .
 
-:Step8 rdf:type :Instruction ;
-    schema:stepNumber 8 ;
-    schema:duration "1 minute per side" ;
-    schema:text "Cook each side of the crêpe for 1 minute." ;
-    :resultantState "Golden-brown crêpes cooked on both sides." ;
-    :usesUtensil :CrepePan .
+:ChoppedSpringOnion rdf:type :FoodItem ;
+    :state "Chopped" .
 
-:Step9 rdf:type :Instruction ;
-    schema:stepNumber 9 ;
-    schema:duration "0 minutes" ;
-    schema:text "Serve and eat warm." ;
-    :resultantState "Crêpes served and ready to eat." ;
-    :usesUtensil :Plate .
+:ChoppedSpinach rdf:type :FoodItem ;
+    :state "Chopped" .
+
+:ChoppedSalmon rdf:type :FoodItem ;
+    :state "Chopped" .
+
+:CookedPastaSauce rdf:type :FoodItem ;
+    :state "Saucy" .
+
+:SeasonedPasta rdf:type :FoodItem ;
+    :state "Seasoned" .
+
+:FinalDish rdf:type :FoodItem ;
+    :state "Ready to Serve" .
+
+:Kettle rdf:type :Utensil ;
+    rdfs:label "Kettle" .
+
+:Knife rdf:type :Utensil ;
+    rdfs:label "Knife" .
+
+:FryingPan rdf:type :Utensil ;
+    rdfs:label "Frying Pan" .
+
+:Boil rdf:type :Action ;
+    rdfs:label "Boil" .
+
+:Cut rdf:type :Action ;
+    rdfs:label "Cut" .
+
+:Chop rdf:type :Action ;
+    rdfs:label "Chop" .
+
+:Grate rdf:type :Action ;
+    rdfs:label "Grate" .
+
+:Cook rdf:type :Action ;
+    rdfs:label "Cook" .
+
+:Mix rdf:type :Action ;
+    rdfs:label "Mix" .
+
+:Season rdf:type :Action ;
+    rdfs:label "Season" .
+
+:Finish rdf:type :Action ;
+    rdfs:label "Finish" .
+@prefix : <http://example.org/recipe#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:BalsamicPepperPasta rdf:type :Recipe ;
+    rdfs:label "Balsamic Pepper Pasta" ;
+    rdfs:comment "Garlic, chilli, Parmesan, basil & rich tomato sauce" ;
+    :categories "Pasta" ;
+    :ingredients (:LasagneSheets :Garlic :RedChilli :Basil :RoastedRedPeppers :Parmesan :Passata :BalsamicVinegar :OliveOil :BoilingWater) ;
+    :steps (:Step1 :Step2 :Step3 :Step4 :Step5) .
+
+:Step1 rdf:type :Step ;
+    :order 1 ;
+    :utensils (:Kettle :Knife) ;
+    :inputs (:LasagneSheets) ;
+    :outputs (:CutLasagneSheets) ;
+    :Action "Cut" .
+
+:Step2 rdf:type :Step ;
+    :order 2 ;
+    :utensils (:Knife) ;
+    :inputs (:Garlic :RedChilli :BasilStalk :RoastedRedPeppers :Parmesan) ;
+    :outputs (:SlicedGarlic :SlicedChilli :SlicedBasilStalk :SlicedPeppers :GratedParmesan) ;
+    :Action "Chop and Grate" .
+
+:Step3 rdf:type :Step ;
+    :order 3 ;
+    :utensils (:FryingPan) ;
+    :inputs (:OliveOil :SlicedGarlic :SlicedChilli :SlicedBasilStalk) ;
+    :outputs (:GoldenGarlicMix) ;
+    :Action "Sauté" .
+
+:Step4 rdf:type :Step ;
+    :order 4 ;
+    :inputs (:GoldenGarlicMix :SlicedPeppers :Passata :CutLasagneSheets :BoilingWater) ;
+    :outputs (:CookedPastaSauce) ;
+    :Action "Cook" .
+
+:Step5 rdf:type :Step ;
+    :order 5 ;
+    :inputs (:CookedPastaSauce :BasilLeaves :GratedParmesan :BalsamicVinegar :OliveOil) ;
+    :outputs (:FinalDish) ;
+    :Action "Finish and Serve" .
+
+:LasagneSheets rdf:type :FoodItem ;
+    :state "Fresh" .
+
+:Garlic rdf:type :FoodItem ;
+    :state "Whole" .
+
+:RedChilli rdf:type :FoodItem ;
+    :state "Whole" .
+
+:Basil rdf:type :FoodItem ;
+    :state "Fresh" .
+
+:RoastedRedPeppers rdf:type :FoodItem ;
+    :state "Jarred" .
+
+:Parmesan rdf:type :FoodItem ;
+    :state "Whole" .
+
+:Passata rdf:type :FoodItem ;
+    :state "Liquid" .
+
+:BalsamicVinegar rdf:type :FoodItem ;
+    :state "Liquid" .
+
+:OliveOil rdf:type :FoodItem ;
+    :state "Liquid" .
+
+:BoilingWater rdf:type :FoodItem ;
+    :state "Hot" .
+
+:SlicedGarlic rdf:type :FoodItem ;
+    :state "Sliced" .
+
+:SlicedChilli rdf:type :FoodItem ;
+    :state "Sliced" .
+
+:SlicedBasilStalk rdf:type :FoodItem ;
+    :state "Sliced" .
+
+:SlicedPeppers rdf:type :FoodItem ;
+    :state "Sliced" .
+
+:GratedParmesan rdf:type :FoodItem ;
+    :state "Grated" .
+
+:GoldenGarlicMix rdf:type :FoodItem ;
+    :state "Sautéed" .
+
+:CookedPastaSauce rdf:type :FoodItem ;
+    :state "Saucy" .
+
+:FinalDish rdf:type :FoodItem ;
+    :state "Ready to Serve" .
+
+:Kettle rdf:type :Utensil ;
+    rdfs:label "Kettle" .
+
+:Knife rdf:type :Utensil ;
+    rdfs:label "Knife" .
+
+:FryingPan rdf:type :Utensil ;
+    rdfs:label "Frying Pan" .
+
+:Boil rdf:type :Action ;
+    rdfs:label "Boil" .
+
+:Cut rdf:type :Action ;
+    rdfs:label "Cut" .
+
+:Chop rdf:type :Action ;
+    rdfs:label "Chop" .
+
+:Grate rdf:type :Action ;
+    rdfs:label "Grate" .
+
+:Sauté rdf:type :Action ;
+    rdfs:label "Sauté" .
+
+:Cook rdf:type :Action ;
+    rdfs:label "Cook" .
+
+:Finish rdf:type :Action ;
+    rdfs:label "Finish" .
